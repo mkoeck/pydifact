@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='utf-8'?>
+<segments>
+  <segment id="ADR" name="Address" desc="To specify an address.">
+    <composite_data_element id="C817" name="AddressUsage" desc="To describe the usage of an address." />
+    <composite_data_element id="C090" name="AddressDetails" desc="To specify the details of an address." />
+    <data_element id="3164" name="CityName" type="an" maxlength="35" usage="" desc="Name of a city (a town, a village) for addressing purposes." />
+    <data_element id="3251" name="PostcodeIdentification" type="an" maxlength="9" usage="" desc="Code defining postal zones or addresses." />
+    <data_element id="3207" name="CountryCoded" type="an" maxlength="3" usage="" desc="Identification of the name of a country or other geographical entity as specified in ISO 3166." />
+    <composite_data_element id="C819" name="CountrySub" desc="To specify a part of a country (eg county or part of a city)." />
+    <composite_data_element id="C517" name="LocationIdentification" desc="Identification of a location by code or name." />
+  </segment>
+  <segment id="AGR" name="AgreementIdentification" desc="To specify the agreement details.">
+    <composite_data_element id="C543" name="AgreementTypeIdentification" desc="Identification of specific agreement type by code or name." />
+    <data_element id="9419" name="ServiceLayerCoded" type="an" maxlength="3" usage="" desc="Subdivision of a service by code." />
+  </segment>
+  <segment id="AJT" name="AdjustmentDetails" desc="To identify the reason for an adjustment.">
+    <data_element id="4465" name="AdjustmentReasonCoded" required="true" type="an" maxlength="3" usage="" desc="Indication of reason for adjustment." />
+    <data_element id="1082" name="LineItemNumber" type="n" maxlength="6" usage="" desc="Serial number designating each separate item within a series of articles." />
+  </segment>
+  <segment id="ALC" name="AllowanceOrCharge" desc="To identify allowance or charge details.">
+    <data_element id="5463" name="AllowanceOrChargeQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of an allowance or charge for the service specified." />
+    <composite_data_element id="C552" name="AllowanceOrChargeInformation" desc="Identification of allowance/charge information by number and/or code." />
+    <data_element id="4471" name="SettlementCoded" type="an" maxlength="3" usage="" desc="Indication of how allowances or charges are to be settled." />
+    <data_element id="1227" name="CalculationSequenceIndicatorCoded" type="an" maxlength="3" usage="" desc="Code indicating the sequence of cumulated calculations to be agreed between interchange partners." />
+    <composite_data_element id="C214" name="SpecialServicesIdentification" desc="Identification of a special service by a code from a specified source or by description." />
+  </segment>
+  <segment id="ALI" name="AdditionalInformation" desc="To indicate that special conditions due to the origin, customs preference, fiscal or commercial factors are applicable.">
+    <data_element id="3239" name="CountryOfOriginCoded" type="an" maxlength="3" usage="" desc="Country in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, of quantitative restrictions, or of any other measure related to trade." />
+    <data_element id="9213" name="TypeOfDutyRegimeCoded" type="an" maxlength="3" usage="" desc="Identification of the statement of the full/preferential regime according to which duty is assessed." />
+    <data_element id="4183" name="SpecialConditionsCoded" type="an" maxlength="3" usage="" desc="Indication of a specific condition." />
+    <data_element id="4183" name="SpecialConditionsCoded" type="an" maxlength="3" usage="" desc="Indication of a specific condition." />
+    <data_element id="4183" name="SpecialConditionsCoded" type="an" maxlength="3" usage="" desc="Indication of a specific condition." />
+    <data_element id="4183" name="SpecialConditionsCoded" type="an" maxlength="3" usage="" desc="Indication of a specific condition." />
+    <data_element id="4183" name="SpecialConditionsCoded" type="an" maxlength="3" usage="" desc="Indication of a specific condition." />
+  </segment>
+  <segment id="APR" name="AdditionalPriceInformation" desc="To provide information concerning pricing related to class of trade, price multiplier, and reason for change.">
+    <data_element id="4043" name="ClassOfTradeCoded" type="an" maxlength="3" usage="" desc="Code identifying the class of trade." />
+    <composite_data_element id="C138" name="PriceMultiplierInformation" desc="Price multiplier and its identification." />
+    <composite_data_element id="C960" name="ReasonForChange" desc="Code and/or description of the reason for a change." />
+  </segment>
+  <segment id="ARD" name="AmountsRelationshipDetails" desc="To provide details of the function of a monetary amount.">
+    <composite_data_element id="C549" name="MonetaryFunction" desc="To identify the function of a related monetary amount." />
+  </segment>
+  <segment id="ARR" name="ArrayInformation" desc="To contain the data in a array. Note: The composite C770 - array cell details - occurs 100 times in the segment.  The component 9424 - array cell information - occurs 100 times in the composite C770.">
+    <composite_data_element id="C778" name="PositionIdentification" desc="To identify the position of an object in a structure containing the object." />
+    <composite_data_element id="C770" name="ArrayCellDetails" desc="To contain the data for a contiguous set of cells in an array." />
+  </segment>
+  <segment id="ASI" name="ArrayStructureIdentification" desc="To identify the structure of an array.">
+    <composite_data_element id="C779" name="ArrayStructureIdentification" required="true" desc="The identification of an array structure." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="ATT" name="Attribute" desc="To identify a specific attribute.">
+    <data_element id="9017" name="AttributeFunctionQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the meaning of an attribute function." />
+    <composite_data_element id="C955" name="AttributeType" desc="Identification of the type of attribute." />
+    <composite_data_element id="C956" name="AttributeDetails" desc="Identification of the attribute related to an entity." />
+  </segment>
+  <segment id="AUT" name="AuthenticationResult" desc="To specify results of the application of an authentification procedure.">
+    <data_element id="9280" name="ValidationResult" required="true" type="an" maxlength="35" usage="" desc="The result of the application of an algorithm to the content of data element in a message." />
+    <data_element id="9282" name="ValidationKeyIdentification" type="an" maxlength="35" usage="" desc="Identifies the cryptographic key used to calculate the validation result." />
+  </segment>
+  <segment id="BGM" name="BeginningOfMessage" desc="To indicate the type and function of a message and to transmit the identifying number.">
+    <composite_data_element id="C002" name="DocumentOrMessageName" desc="Identification of a type of document/message by code or name. Code preferred." />
+    <data_element id="1004" name="DocumentOrMessageNumber" type="an" maxlength="35" usage="" desc="Reference number assigned to the document/message by the issuer." />
+    <data_element id="1225" name="MessageFunctionCoded" type="an" maxlength="3" usage="" desc="Code indicating the function of the message." />
+    <data_element id="4343" name="ResponseTypeCoded" type="an" maxlength="3" usage="" desc="Code specifying the type of acknowledgement required or transmitted." />
+  </segment>
+  <segment id="BII" name="StructureIdentification" desc="A segment used to convey an indexing structure mechanism which identifies the positioning of a group or item.">
+    <data_element id="7429" name="IndexingStructureQualifier" required="true" type="an" maxlength="3" usage="" desc="To qualify the indexing structure established for a project." />
+    <composite_data_element id="C045" name="BillLevelIdentification" required="true" desc="A sequenced collection of facetted codes used for multiple indexing purposes." />
+    <data_element id="7140" name="ItemNumber" type="an" maxlength="35" usage="" desc="A number allocated to a group or item." />
+  </segment>
+  <segment id="BUS" name="BusinessFunction" desc="To provide information related to the processing and purpose of a financial message.">
+    <composite_data_element id="C521" name="BusinessFunction" desc="To specify a business reason." />
+    <data_element id="3279" name="GeographicEnvironmentCoded" type="an" maxlength="3" usage="" desc="Describe the geographic area for message." />
+    <data_element id="4487" name="TypeOfFinancialTransactionCoded" type="an" maxlength="3" usage="" desc="Specification of the type of a financial transaction in coded form." />
+    <composite_data_element id="C551" name="BankOperation" desc="Identification of a bank operation by code." />
+    <data_element id="4463" name="IntracompanyPaymentCoded" type="an" maxlength="3" usage="" desc="Indication that the payment is within one company." />
+  </segment>
+  <segment id="CAV" name="CharacteristicValue" desc="To provide the value of a characteristic.">
+    <composite_data_element id="C889" name="CharacteristicValue" required="true" desc="To provide the value of a characteristic." />
+  </segment>
+  <segment id="CCD" name="CreditCoverDetails" desc="To request a credit cover, reply to that request and disclose the reason for the reply.">
+    <data_element id="4505" name="CreditCoverRequestCoded" type="an" maxlength="3" usage="" desc="Request for a credit cover." />
+    <data_element id="4507" name="CreditCoverResponseCoded" type="an" maxlength="3" usage="" desc="Reply to a request for credit cover." />
+    <data_element id="4509" name="CreditCoverReasonCoded" type="an" maxlength="3" usage="" desc="Reason of reply to a request for credit cover." />
+  </segment>
+  <segment id="CCI" name="CharacteristicOrClassId" desc="To identify and describe a specific characteristic.">
+    <data_element id="7059" name="PropertyClassCoded" type="an" maxlength="3" usage="" desc="Specification of the type of class." />
+    <composite_data_element id="C502" name="MeasurementDetails" desc="Identification of measurement type." />
+    <composite_data_element id="C240" name="ProductCharacteristic" desc="Specific product characteristic data." />
+    <data_element id="7001" name="PhysicalOrLogicalStateQualifier" required="true" type="an" maxlength="3" usage="" desc="Code giving a specific meaning to a physical or logical state." />
+    <composite_data_element id="C564" name="PhysicalOrLogicalStateInformation" required="true" desc="To give information in coded or clear text form on the physical or logical state." />
+  </segment>
+  <segment id="CDS" name="CodeSetIdentification" desc="To identify a code set and to give its class and maintenance operation.">
+    <composite_data_element id="C702" name="CodeSetIdentification" required="true" desc="To identify a code set." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="CDV" name="CodeValueDefinition" desc="To provide information related to a code value.">
+    <data_element id="9426" name="CodeValue" required="true" type="an" maxlength="35" usage="" desc="Value of the code." />
+    <data_element id="9434" name="CodeName" type="an" maxlength="70" usage="" desc="Name of a code." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="CED" name="ComputerEnvironmentDetails" desc="To give a precise definition of all necessary elements belonging to the configuration of a computer system like hardware, firmware, operating system, communication (VANS, network type, protocol, format) and application software.">
+    <data_element id="1501" name="ComputerEnvironmentDetailsQualifier" required="true" type="an" maxlength="3" usage="" desc="A code to identify the computer environment details." />
+    <composite_data_element id="C079" name="ComputerEnvironmentIdentification" required="true" desc="To identify parts of a computer environment." />
+  </segment>
+  <segment id="CMP" name="CompositeDataElementIdentification" desc="To identify a composite data element and to give its class and maintenance operation.">
+    <data_element id="9146" name="CompositeDataElementTag" required="true" type="an" maxlength="4" usage="" desc="Tag of a composite data element." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="CNI" name="ConsignmentInformation" desc="To identify one consignment.">
+    <data_element id="1490" name="ConsolidationItemNumber" type="n" maxlength="4" usage="" desc="Serial number differentiating each separate consignment included in the consolidation." />
+    <composite_data_element id="C503" name="DocumentOrMessageDetails" desc="Identification of document/message by number, status, source and/or language." />
+    <data_element id="1312" name="ConsignmentLoadSequenceNumber" type="n" maxlength="4" usage="" desc="To indicate the sequence of loading in which the consignments are loaded in a piece of equipment or in a means of transport (e.g. truck)." />
+  </segment>
+  <segment id="CNT" name="ControlTotal" desc="To provide control total.">
+    <composite_data_element id="C270" name="Control" required="true" desc="Control total for checking integrity of a message or part of a message." />
+  </segment>
+  <segment id="COD" name="ComponentDetails" desc="To provide component details of an object (e.g. product, container) such as its type and the material of which it is composed.">
+    <composite_data_element id="C823" name="TypeOfUnitOrComponent" desc="To identify the type of unit/component of an object (e.g. lock, door, tyre)." />
+    <composite_data_element id="C824" name="ComponentMaterial" desc="To identify the material of which a component is composed (e.g. steel, plastics)." />
+  </segment>
+  <segment id="COM" name="CommunicationContact" desc="To identify a communication number of a department or a person to whom communication should be directed.">
+    <composite_data_element id="C076" name="CommunicationContact" required="true" desc="Communication number of a department or employee in a specified channel." />
+  </segment>
+  <segment id="COT" name="ContributionDetails" desc="To specify details about membership contributions.">
+    <data_element id="5047" name="ContributionQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the meaning of a financial contribution to a scheme or group." />
+    <composite_data_element id="C953" name="ContributionType" desc="Identification of the type of a contribution to a scheme or group." />
+    <composite_data_element id="C522" name="Instruction" desc="To specify an instruction." />
+    <composite_data_element id="C203" name="RateOrTariffClass" desc="Identification of the applicable rate/tariff class." />
+    <composite_data_element id="C960" name="ReasonForChange" desc="Code and/or description of the reason for a change." />
+  </segment>
+  <segment id="CPI" name="ChargePaymentInstructions" desc="To identify a charge.">
+    <composite_data_element id="C229" name="ChargeCategory" desc="Identification of a category or a zone of charges." />
+    <composite_data_element id="C231" name="MethodOfPayment" desc="Code identifying the method of payment." />
+    <data_element id="4237" name="PrepaidOrCollectIndicatorCoded" type="an" maxlength="3" usage="" desc="Code indicating whether freight item amount is prepaid or to be collected." />
+  </segment>
+  <segment id="CPS" name="ConsignmentPackingSequence" desc="To identify the sequence in which physical packing is presented in the consignment, and optionally to identify the hierarchical relationship between packing layers.">
+    <data_element id="7075" name="PackagingLevelCoded" type="an" maxlength="3" usage="" desc="Indication of level of packaging specified." />
+  </segment>
+  <segment id="CST" name="CustomsStatusOfGoods" desc="To specify goods in terms of customs identities, status and intended use.">
+    <data_element id="1496" name="GoodsItemNumber" type="n" maxlength="5" usage="" desc="Serial number differentiating each separate goods item entry of a consignment as contained in one document/declaration." />
+    <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity." />
+    <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity." />
+    <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity." />
+    <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity." />
+    <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity." />
+  </segment>
+  <segment id="CTA" name="ContactInformation" desc="To identify a person or a department to whom communication should be directed.">
+    <data_element id="3139" name="ContactFunctionCoded" type="an" maxlength="3" usage="" desc="Code specifying the function of a contact (e.g. department or person)." />
+    <composite_data_element id="C056" name="DepartmentOrEmployeeDetails" desc="Code and/or name of a department or employee. Code preferred." />
+  </segment>
+  <segment id="CUX" name="Currencies" desc="To specify currencies used in the transaction and relevant details for the rate of exchange.">
+    <composite_data_element id="C504" name="CurrencyDetails" desc="The usage to which a currency relates." />
+    <composite_data_element id="C504" name="CurrencyDetails" desc="The usage to which a currency relates." />
+    <data_element id="5402" name="RateOfExchange" type="n" maxlength="12" usage="" desc="The rate at which one specified currency is expressed in another specified currency." />
+    <data_element id="6341" name="CurrencyMarketExchangeCoded" type="an" maxlength="3" usage="" desc="Code identifying the market upon which the currency exchange rate is based." />
+  </segment>
+  <segment id="DAM" name="Damage" desc="To specify damage including action taken.">
+    <data_element id="7493" name="DamageDetailsQualifier" required="true" type="an" maxlength="3" usage="" desc="Code giving specific meaning to the damage details." />
+    <composite_data_element id="C821" name="TypeOfDamage" desc="To specify the type of damage to an object." />
+    <composite_data_element id="C822" name="DamageArea" desc="To specify where the damage is on an object." />
+    <composite_data_element id="C825" name="DamageSeverity" desc="To specify the severity of damage to an object." />
+    <composite_data_element id="C826" name="Action" desc="To indicate an action which has been taken or is to be taken (e.g. in relation to a certain object)." />
+  </segment>
+  <segment id="DGS" name="DangerousGoods" desc="To identify dangerous goods.">
+    <data_element id="8273" name="DangerousGoodsRegulationsCoded" type="an" maxlength="3" usage="" desc="Code indicating the regulation, international or national, applicable for a means of transport." />
+    <composite_data_element id="C205" name="HazardCode" desc="The identification of the dangerous goods in code." />
+    <composite_data_element id="C234" name="UndgInformation" desc="Information on United Nations Dangerous Goods classification." />
+    <composite_data_element id="C223" name="DangerousGoodsShipmentFlashpoint" desc="Temperature at which a vapor according to ISO 1523/73 can be ignited." />
+    <data_element id="8339" name="PackingGroupCoded" type="an" maxlength="3" usage="" desc="Identification of a packing group by code." />
+    <data_element id="8364" name="EmsNumber" type="an" maxlength="6" usage="" desc="Emergency procedures for ships carrying dangerous goods." />
+    <data_element id="8410" name="Mfag" type="an" maxlength="4" usage="" desc="Medical first aid guide." />
+    <data_element id="8126" name="TremCardNumber" type="an" maxlength="10" usage="" desc="The identification of a transport emergency card giving advice for emergency actions." />
+    <composite_data_element id="C235" name="HazardIdentification" desc="Identification of the Orange placard required on the means of transport." />
+    <composite_data_element id="C236" name="DangerousGoodsLabel" desc="Markings identifying the type of hazardous goods and similar information." />
+    <data_element id="8255" name="PackingInstructionCoded" type="an" maxlength="3" usage="" desc="Code defining the quantity and the type of package in which a product is allowed to be shipped in a passenger or freight aircraft." />
+    <data_element id="8325" name="CategoryOfMeansOfTransportCoded" type="an" maxlength="3" usage="" desc="Identification of the type of means of transport determined to carry particular goods, not necessarily being hazardous." />
+    <data_element id="8211" name="PermissionForTransportCoded" type="an" maxlength="3" usage="" desc="Code giving evidence that transportation of particular hazardous cargo is permitted and identifies the restrictions being put upon a particular transport." />
+  </segment>
+  <segment id="DII" name="DirectoryIdentification" desc="To identify a directory and to give its release, status, controlling agency, language and maintenance operation.">
+    <data_element id="1056" name="Version" required="true" type="an" maxlength="9" usage="" desc="To specify the version number or name of an object." />
+    <data_element id="1058" name="Release" required="true" type="an" maxlength="9" usage="" desc="To specify the release number or release name of an object." />
+    <data_element id="9148" name="DirectoryStatus" type="an" maxlength="3" usage="" desc="The status of a directory set." />
+    <data_element id="1476" name="ControlAgency" type="an" maxlength="2" usage="" desc="Identification of the agency controlling the specification, maintenance and publication of the message." />
+    <data_element id="3453" name="LanguageCoded" type="an" maxlength="3" usage="" desc="Code of language (ISO 639-1988)." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="DIM" name="Dimensions" desc="To specify dimensions.">
+    <data_element id="6145" name="DimensionQualifier" required="true" type="an" maxlength="3" usage="" desc="To specify the dimensions applicable to each of the transportable units." />
+    <composite_data_element id="C211" name="Dimensions" required="true" desc="Specification of the dimensions of a transportable unit." />
+  </segment>
+  <segment id="DLI" name="DocumentLineIdentification" desc="To specify the processing mode of a specific line within a referenced document.">
+    <data_element id="1073" name="DocumentLineIndicatorCoded" required="true" type="an" maxlength="3" usage="" desc="Code indicating if a document line is included or excluded for processing purposes." />
+    <data_element id="1082" name="LineItemNumber" required="true" type="n" maxlength="6" usage="" desc="Serial number designating each separate item within a series of articles." />
+  </segment>
+  <segment id="DLM" name="DeliveryLimitations" desc="To specify limitations on deliveries.">
+    <data_element id="4455" name="BackOrderCoded" type="an" maxlength="3" usage="" desc="Code to identify the back order agreement." />
+    <composite_data_element id="C522" name="Instruction" desc="To specify an instruction." />
+    <composite_data_element id="C214" name="SpecialServicesIdentification" desc="Identification of a special service by a code from a specified source or by description." />
+    <data_element id="4457" name="ProductOrServiceSubstitutionCoded" type="an" maxlength="3" usage="" desc="Code indicating product or service substitution conditions." />
+  </segment>
+  <segment id="DMS" name="DocumentOrMessageSummary" desc="To specify summary information relating to the document/message.">
+    <data_element id="1004" name="DocumentOrMessageNumber" type="an" maxlength="35" usage="" desc="Reference number assigned to the document/message by the issuer." />
+    <data_element id="1001" name="DocumentOrMessageNameCoded" type="an" maxlength="3" usage="" desc="Document/message identifier expressed in code." />
+    <data_element id="7240" name="TotalNumberOfItems" type="n" maxlength="15" usage="" desc="Total number of items, having separate goods descriptions." />
+  </segment>
+  <segment id="DOC" name="DocumentOrMessageDetails" desc="To identify documents, either printed, electronically transferred, or referenced as specified in message description, including, where relevant, the identification of the type of transaction that will result from this message.">
+    <composite_data_element id="C002" name="DocumentOrMessageName" required="true" desc="Identification of a type of document/message by code or name. Code preferred." />
+    <composite_data_element id="C503" name="DocumentOrMessageDetails" desc="Identification of document/message by number, status, source and/or language." />
+    <data_element id="3153" name="CommunicationChannelIdentifierCoded" type="an" maxlength="3" usage="" desc="Code identifying the type of communication channel being used." />
+    <data_element id="1220" name="NumberOfCopiesOfDocumentRequired" type="n" maxlength="2" usage="" desc="Number of originals or copies of a document stipulated or referred to as being required." />
+    <data_element id="1218" name="NumberOfOriginalsOfDocumentRequired" type="n" maxlength="2" usage="" desc="Specification of the number of originals of a stipulated document that are required." />
+  </segment>
+  <segment id="DSI" name="DataSetIdentification" desc="To identify a data set.">
+    <composite_data_element id="C782" name="DataSetIdentification" required="true" desc="The identification of a data set." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <composite_data_element id="C286" name="SequenceInformation" desc="Identification of a sequence and source for sequencing." />
+    <data_element id="1060" name="RevisionNumber" type="an" maxlength="6" usage="" desc="To specify a revision number." />
+  </segment>
+  <segment id="DTM" name="DateOrTimeOrPeriod" desc="To specify date, and/or time, or period.">
+    <composite_data_element id="C507" name="DateOrTimeOrPeriod" required="true" desc="Date and/or time, or period relevant to the specified date/time/period type." />
+  </segment>
+  <segment id="EFI" name="ExternalFileLinkIdentification" desc="To specify the link of one non-EDIFACT external file to an EDIFACT message.">
+    <composite_data_element id="C077" name="FileIdentification" required="true" desc="To identify a file." />
+    <composite_data_element id="C099" name="FileDetails" desc="To define details relevant to a file." />
+    <data_element id="1050" name="SequenceNumber" type="an" maxlength="6" usage="" desc="Number indicating the position in a sequence." />
+  </segment>
+  <segment id="ELM" name="SimpleDataElementDetails" desc="To identify a simple data element and give related details.">
+    <data_element id="9150" name="SimpleDataElementTag" required="true" type="an" maxlength="4" usage="" desc="Tag of a simple data element." />
+    <data_element id="9153" name="SimpleDataElementCharacterRepresentationCoded" desc="To specify the character representation of a simple data element." type="an" maxlength="3" usage="" />
+    <data_element id="9155" name="SimpleDataElementLengthTypeCoded" type="an" maxlength="3" usage="" desc="Code identifying the length type of a simple data element." />
+    <data_element id="9156" name="SimpleDataElementMaximumLength" type="n" maxlength="3" usage="" desc="To indicate the maximum length of a simple data element." />
+    <data_element id="9158" name="SimpleDataElementMinimumLength" type="n" maxlength="3" usage="" desc="To indicate the minimum length of a simple data element." />
+    <data_element id="9161" name="CodeSetIndicatorCoded" type="an" maxlength="3" usage="" desc="To indicate if a data element has an associated code set." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="ELU" name="DataElementUsageDetails" desc="To specify the usage of a data element.">
+    <data_element id="9162" name="DataElementTag" required="true" type="an" maxlength="4" usage="" desc="Tag of a data element." />
+    <data_element id="7299" name="RequirementDesignatorCoded" type="an" maxlength="3" usage="" desc="To specify the designated requirement." />
+    <data_element id="1050" name="SequenceNumber" type="an" maxlength="6" usage="" desc="Number indicating the position in a sequence." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="EMP" name="EmploymentDetails" desc="To specify employment details.">
+    <data_element id="9003" name="EmploymentQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the meaning of employment details." />
+    <composite_data_element id="C948" name="EmploymentCategory" desc="Code and/or description of an employment category." />
+    <composite_data_element id="C951" name="Occupation" desc="Description of an occupation." />
+    <composite_data_element id="C950" name="QualificationClassification" desc="Qualification classification description and/or code. This specifies the trade, skill, professional or similar qualification category." />
+    <data_element id="3494" name="JobTitle" type="an" maxlength="35" usage="" desc="Description of job classification." />
+    <data_element id="9035" name="QualificationAreaCoded" type="an" maxlength="3" usage="" desc="Code identifying the application area of a qualification." />
+  </segment>
+  <segment id="EQA" name="AttachedEquipment" desc="To specify attached or related equipment.">
+    <data_element id="8053" name="EquipmentQualifier" required="true" type="an" maxlength="3" usage="" desc="Code identifying type of equipment." />
+    <composite_data_element id="C237" name="EquipmentIdentification" desc="Marks (letters and/or numbers) identifying equipment used for transport such as a container." />
+  </segment>
+  <segment id="EQD" name="EquipmentDetails" desc="To identify a unit of equipment.">
+    <data_element id="8053" name="EquipmentQualifier" required="true" type="an" maxlength="3" usage="" desc="Code identifying type of equipment." />
+    <composite_data_element id="C237" name="EquipmentIdentification" desc="Marks (letters and/or numbers) identifying equipment used for transport such as a container." />
+    <composite_data_element id="C224" name="EquipmentSizeAndType" desc="Code and/or name identifying size and type of equipment used in transport. Code preferred." />
+    <data_element id="8077" name="EquipmentSupplierCoded" type="an" maxlength="3" usage="" desc="To indicate the party that is the supplier of the equipment." />
+    <data_element id="8249" name="EquipmentStatusCoded" type="an" maxlength="3" usage="" desc="Indication of the action related to the equipment." />
+    <data_element id="8169" name="FullOrEmptyIndicatorCoded" type="an" maxlength="3" usage="" desc="To indicate the extent to which the equipment is full or empty." />
+  </segment>
+  <segment id="EQN" name="NumberOfUnits" desc="To specify the number of units.">
+    <composite_data_element id="C523" name="NumberOfUnitDetails" required="true" desc="Identification of number of units and its purpose." />
+  </segment>
+  <segment id="ERC" name="ApplicationErrorInformation" desc="To identify the type of application error within a message.">
+    <composite_data_element id="C901" name="ApplicationErrorDetail" required="true" desc="Code assigned by the recipient of a message to indicate a data validation error condition." />
+  </segment>
+  <segment id="ERP" name="ErrorPointDetails" desc="To identify the location and type of application error within a message.">
+    <composite_data_element id="C701" name="ErrorPointDetails" required="true" desc="Indication of the point of error in a message." />
+  </segment>
+  <segment id="FCA" name="FinancialChargesAllocation" desc="Description of allocation of charges.">
+    <data_element id="4471" name="SettlementCoded" required="true" type="an" maxlength="3" usage="" desc="Indication of how allowances or charges are to be settled." />
+    <composite_data_element id="C878" name="ChargeOrAllowanceAccount" desc="Identification of the account for charge or allowance." />
+  </segment>
+  <segment id="FII" name="FinancialInstitutionInformation" desc="To identify an account and a related financial institution.">
+    <data_element id="3035" name="PartyQualifier" required="true" type="an" maxlength="3" usage="" desc="Code giving specific meaning to a party." />
+    <composite_data_element id="C078" name="AccountIdentification" desc="Identification of an account holder by account number and/or account holder name in one or two lines. Number preferred." />
+    <composite_data_element id="C088" name="InstitutionIdentification" desc="Identification of a financial institution by code branch number, or name and name of place. Code or branch number preferred." />
+    <data_element id="3207" name="CountryCoded" type="an" maxlength="3" usage="" desc="Identification of the name of a country or other geographical entity as specified in ISO 3166." />
+  </segment>
+  <segment id="FNS" name="FootnoteSet" desc="To identify a set of footnotes.">
+    <composite_data_element id="C783" name="FootnoteSetIdentification" required="true" desc="The identification of a set of footnotes." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="FNT" name="Footnote" desc="To identify a footnote.">
+    <composite_data_element id="C784" name="FootnoteIdentification" required="true" desc="The identification of a footnote." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="FTX" name="FreeText" desc="To provide free form or coded text information.">
+    <data_element id="4451" name="TextSubjectQualifier" required="true" type="an" maxlength="3" usage="" desc="Code specifying subject of a free text." />
+    <data_element id="4453" name="TextFunctionCoded" type="an" maxlength="3" usage="" desc="Code specifying how to handle the text." />
+    <composite_data_element id="C107" name="TextReference" desc="Coded reference to a standard text and its source." />
+    <composite_data_element id="C108" name="TextLiteral" desc="Free text; one to five lines." />
+    <data_element id="3453" name="LanguageCoded" type="an" maxlength="3" usage="" desc="Code of language (ISO 639-1988)." />
+  </segment>
+  <segment id="GDS" name="NatureOfCargo" desc="To indicate the type of cargo as a general classification.">
+    <composite_data_element id="C703" name="NatureOfCargo" desc="Rough classification of a type of cargo." />
+  </segment>
+  <segment id="GID" name="GoodsItemDetails" desc="To indicate totals of a goods item.">
+    <data_element id="1496" name="GoodsItemNumber" type="n" maxlength="5" usage="" desc="Serial number differentiating each separate goods item entry of a consignment as contained in one document/declaration." />
+    <composite_data_element id="C213" name="NumberAndTypeOfPackages" desc="Number and type of individual parts of a shipment." />
+    <composite_data_element id="C213" name="NumberAndTypeOfPackages" desc="Number and type of individual parts of a shipment." />
+    <composite_data_element id="C213" name="NumberAndTypeOfPackages" desc="Number and type of individual parts of a shipment." />
+  </segment>
+  <segment id="GIN" name="GoodsIdentityNumber" desc="To give specific identification numbers, either as single numbers or ranges.">
+    <data_element id="7405" name="IdentityNumberQualifier" required="true" type="an" maxlength="3" usage="" desc="Code specifying the type/source of identity number." />
+    <composite_data_element id="C208" name="IdentityNumberRange" required="true" desc="Goods item identification numbers, start and end of consecutively numbered range." />
+    <composite_data_element id="C208" name="IdentityNumberRange" desc="Goods item identification numbers, start and end of consecutively numbered range." />
+    <composite_data_element id="C208" name="IdentityNumberRange" desc="Goods item identification numbers, start and end of consecutively numbered range." />
+    <composite_data_element id="C208" name="IdentityNumberRange" desc="Goods item identification numbers, start and end of consecutively numbered range." />
+    <composite_data_element id="C208" name="IdentityNumberRange" desc="Goods item identification numbers, start and end of consecutively numbered range." />
+  </segment>
+  <segment id="GIR" name="RelatedIdentificationNumbers" desc="To specify a related set of identification numbers.">
+    <data_element id="7297" name="SetIdentificationQualifier" required="true" type="an" maxlength="3" usage="" desc="Identification of the type of set." />
+    <composite_data_element id="C206" name="IdentificationNumber" required="true" desc="The identification of an object." />
+    <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object." />
+    <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object." />
+    <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object." />
+    <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object." />
+  </segment>
+  <segment id="GIS" name="GeneralIndicator" desc="To transmit a processing indicator.">
+    <composite_data_element id="C529" name="ProcessingIndicator" required="true" desc="Type of process indication." />
+  </segment>
+  <segment id="GOR" name="GovernmentalRequirements" desc="To indicate the requirement for a specific govermental action and/or procedure or which specific procedure is valid for a specific part of the transport.">
+    <data_element id="8323" name="TransportMovementCoded" type="an" maxlength="3" usage="" desc="Code indicating the movement of goods (e.g. import, export, transit)." />
+    <composite_data_element id="C232" name="GovernmentAction" desc="Code indicating a type of government action." />
+    <composite_data_element id="C232" name="GovernmentAction" desc="Code indicating a type of government action." />
+    <composite_data_element id="C232" name="GovernmentAction" desc="Code indicating a type of government action." />
+    <composite_data_element id="C232" name="GovernmentAction" desc="Code indicating a type of government action." />
+  </segment>
+  <segment id="GRU" name="SegmentGroupUsageDetails" desc="To specify the usage of a segment group within a message type structure and its maintenance operation.">
+    <data_element id="9164" name="GroupIdentification" required="true" type="an" maxlength="4" usage="" desc="To identify a group within a message type structure." />
+    <data_element id="7299" name="RequirementDesignatorCoded" type="an" maxlength="3" usage="" desc="To specify the designated requirement." />
+    <data_element id="6176" name="MaximumNumberOfOccurrences" type="n" maxlength="7" usage="" desc="To specify the maximum number of occurrences." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+    <data_element id="1050" name="SequenceNumber" type="an" maxlength="6" usage="" desc="Number indicating the position in a sequence." />
+  </segment>
+  <segment id="HAN" name="HandlingInstructions" desc="To specify handling and where necessary, notify hazards.">
+    <composite_data_element id="C524" name="HandlingInstructions" desc="Instruction for the handling of goods, products or articles in shipment, storage etc." />
+    <composite_data_element id="C218" name="HazardousMaterial" desc="Hazardous material code from a specified source." />
+  </segment>
+  <segment id="ICD" name="InsuranceCoverDescription" desc="To describe the insurance cover.">
+    <composite_data_element id="C330" name="InsuranceCoverType" required="true" desc="To provide the insurance cover type." />
+    <composite_data_element id="C331" name="InsuranceCoverDetails" required="true" desc="To provide the insurance cover details." />
+  </segment>
+  <segment id="IDE" name="Identity" desc="To identify an object.">
+    <data_element id="7495" name="IdentificationQualifier" required="true" type="an" maxlength="3" usage="" desc="To identify a type of object." />
+    <composite_data_element id="C206" name="IdentificationNumber" required="true" desc="The identification of an object." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="1222" name="ConfigurationLevel" type="n" maxlength="2" usage="" desc="Number indicating the level of an object which is in a hierarchy." />
+    <composite_data_element id="C778" name="PositionIdentification" desc="To identify the position of an object in a structure containing the object." />
+    <composite_data_element id="C240" name="ProductCharacteristic" desc="Specific product characteristic data." />
+  </segment>
+  <segment id="IHC" name="PersonCharacteristic" desc="To specify characteristics of a person such as ethnic origin.">
+    <data_element id="3289" name="PersonCharacteristicQualifier" required="true" type="an" maxlength="3" usage="" desc="To specify the type of specific person characteristic." />
+    <composite_data_element id="C818" name="PersonInheritedCharacteristicDetails" desc="To specify an inherited characteristic of a person." />
+  </segment>
+  <segment id="IMD" name="ItemDescription" desc="To describe an item in either an industry or free format.">
+    <data_element id="7077" name="ItemDescriptionTypeCoded" type="an" maxlength="3" usage="" desc="Code indicating the format of a description." />
+    <data_element id="7081" name="ItemCharacteristicCoded" type="an" maxlength="3" usage="" desc="Code specifying the item characteristic being described." />
+    <composite_data_element id="C273" name="ItemDescription" desc="" />
+    <data_element id="7383" name="SurfaceOrLayerIndicatorCoded" type="an" maxlength="3" usage="" desc="Code indicating the surface or layer of a product that is being described." />
+  </segment>
+  <segment id="IND" name="IndexDetails" desc="To specify an index.">
+    <composite_data_element id="C545" name="IndexIdentification" desc="To identify an index." />
+    <composite_data_element id="C546" name="IndexValue" desc="To identify the value of an index." />
+  </segment>
+  <segment id="INP" name="PartiesToInstruction" desc="To specify parties to an instruction and where relevant, the instruction.">
+    <composite_data_element id="C849" name="PartiesToInstruction" desc="Identify the sending and receiving parties of the instruction." />
+    <composite_data_element id="C522" name="Instruction" desc="To specify an instruction." />
+    <composite_data_element id="C850" name="StatusOfInstruction" desc="Provides information regarding the status of an instruction." />
+    <data_element id="1229" name="ActionRequestOrNotificationCoded" type="an" maxlength="3" usage="" desc="Code specifying the action to be taken or already taken." />
+  </segment>
+  <segment id="INV" name="InventoryManagementRelatedDetails" desc="To provide the different information related to the inventory management functions and needed to process properly the inventory movements and the inventory balances.">
+    <data_element id="4501" name="InventoryMovementDirectionCoded" type="an" maxlength="3" usage="" desc="To specify the direction of inventory movement." />
+    <data_element id="7491" name="TypeOfInventoryAffectedCoded" type="an" maxlength="3" usage="" desc="To specify the type of inventory which is affected by an inventory movement or expressed in an inventory balance." />
+    <data_element id="4499" name="ReasonForInventoryMovementCoded" type="an" maxlength="3" usage="" desc="To explain the reason for the inventory movement." />
+    <data_element id="4503" name="InventoryBalanceMethodCoded" type="an" maxlength="3" usage="" desc="To specify the method used to establish an inventory balance." />
+    <composite_data_element id="C522" name="Instruction" desc="To specify an instruction." />
+  </segment>
+  <segment id="IRQ" name="InformationRequired" desc="To indicate which information is requested in a responding message.">
+    <composite_data_element id="C333" name="InformationRequest" required="true" desc="To specify the information requested in a responding message." />
+  </segment>
+  <segment id="LAN" name="Language" desc="To specify a language.">
+    <data_element id="3455" name="LanguageQualifier" required="true" type="an" maxlength="3" usage="" desc="Type of language." />
+    <composite_data_element id="C508" name="LanguageDetails" desc="To identify a language." />
+  </segment>
+  <segment id="LIN" name="LineItem" desc="To identify a line item and configuration.">
+    <data_element id="1082" name="LineItemNumber" type="n" maxlength="6" usage="" desc="Serial number designating each separate item within a series of articles." />
+    <data_element id="1229" name="ActionRequestOrNotificationCoded" type="an" maxlength="3" usage="" desc="Code specifying the action to be taken or already taken." />
+    <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source." />
+    <composite_data_element id="C829" name="Sub" desc="To provide an indication that a segment or segment group is used to contain sub-line or sub-line item information and to optionally enable the sub-line to be identified." />
+    <data_element id="1222" name="ConfigurationLevel" type="n" maxlength="2" usage="" desc="Number indicating the level of an object which is in a hierarchy." />
+    <data_element id="7083" name="ConfigurationCoded" type="an" maxlength="3" usage="" desc="Code indicating the status of the sub-line item in the configuration." />
+  </segment>
+  <segment id="LOC" name="PlaceOrLocationIdentification" desc="To identify a country/place/location/related location one/related location two.">
+    <data_element id="3227" name="PlaceOrLocationQualifier" required="true" type="an" maxlength="3" usage="" desc="Code identifying the function of a location." />
+    <composite_data_element id="C517" name="LocationIdentification" desc="Identification of a location by code or name." />
+    <composite_data_element id="C519" name="RelatedLocationOneIdentification" desc="Identification the first related location by code or name." />
+    <composite_data_element id="C553" name="RelatedLocationTwoIdentification" desc="Identification of second related location by code or name." />
+    <data_element id="5479" name="RelationCoded" type="an" maxlength="3" usage="" desc="To specify the relationship between two or more items." />
+  </segment>
+  <segment id="MEA" name="Measurements" desc="To specify physical measurements, including dimension tolerances, weights and counts.">
+    <data_element id="6311" name="MeasurementApplicationQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the application of the physical measurement used." />
+    <composite_data_element id="C502" name="MeasurementDetails" desc="Identification of measurement type." />
+    <composite_data_element id="C174" name="ValueOrRange" desc="Measurement value and relevant minimum and maximum tolerances in that order." />
+    <data_element id="7383" name="SurfaceOrLayerIndicatorCoded" type="an" maxlength="3" usage="" desc="Code indicating the surface or layer of a product that is being described." />
+  </segment>
+  <segment id="MEM" name="MembershipDetails" desc="To specify details about membership.">
+    <data_element id="7449" name="MembershipQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the meaning of a code to qualify membership data." />
+    <composite_data_element id="C942" name="MembershipCategory" desc="Identification and/or description of a membership category for a member of a scheme or group." />
+    <composite_data_element id="C944" name="MembershipStatus" desc="Code and/or description of membership status." />
+    <composite_data_element id="C945" name="MembershipLevel" desc="Identification of a membership level." />
+    <composite_data_element id="C203" name="RateOrTariffClass" desc="Identification of the applicable rate/tariff class." />
+    <composite_data_element id="C960" name="ReasonForChange" desc="Code and/or description of the reason for a change." />
+  </segment>
+  <segment id="MKS" name="MarketOrSalesChannelInformation" desc="To specify to which market and/or through which sales distribution channel and/or for which end-use the sales of product/service have been made or are given as forecast.">
+    <data_element id="7293" name="SectorOrSubjectIdentificationQualifier" required="true" type="an" maxlength="3" usage="" desc="Identification of the subject areas to which the specified conditions apply." />
+    <composite_data_element id="C332" name="SalesChannelIdentification" required="true" desc="Identification of sales channel for marketing data, sales, forecast, planning..." />
+    <data_element id="1229" name="ActionRequestOrNotificationCoded" type="an" maxlength="3" usage="" desc="Code specifying the action to be taken or already taken." />
+  </segment>
+  <segment id="MOA" name="MonetaryAmount" desc="To specify a monetary amount.">
+    <composite_data_element id="C516" name="MonetaryAmount" required="true" desc="Amount of goods or services stated as a monetary amount in a specified currency." />
+  </segment>
+  <segment id="MSG" name="MessageTypeIdentification" desc="To identify a message type and to give its class and maintenance operation.">
+    <composite_data_element id="C709" name="MessageIdentifier" required="true" desc="Identification of the message." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="NAD" name="NameAndAddress" desc="To specify the name/address and their related function, either by CO82 only and/or unstructured by CO58 or structured by CO80 thru 3207.">
+    <data_element id="3035" name="PartyQualifier" required="true" type="an" maxlength="3" usage="" desc="Code giving specific meaning to a party." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <composite_data_element id="C058" name="NameAndAddress" desc="Unstructured name and address: one to five lines." />
+    <composite_data_element id="C080" name="PartyName" desc="Identification of a transaction party by name, one to five lines. Party name may be formatted." />
+    <composite_data_element id="C059" name="Street" desc="Street address and/or PO Box number in a structured address: one to three lines." />
+    <data_element id="3164" name="CityName" type="an" maxlength="35" usage="" desc="Name of a city (a town, a village) for addressing purposes." />
+    <data_element id="3229" name="CountrySubentityIdentification" type="an" maxlength="9" usage="" desc="Identification of the name of sub-entities (state, province) defined by appropriate governmental agencies." />
+    <data_element id="3251" name="PostcodeIdentification" type="an" maxlength="9" usage="" desc="Code defining postal zones or addresses." />
+    <data_element id="3207" name="CountryCoded" type="an" maxlength="3" usage="" desc="Identification of the name of a country or other geographical entity as specified in ISO 3166." />
+  </segment>
+  <segment id="NAT" name="Nationality" desc="To specify a nationality.">
+    <data_element id="3493" name="NationalityQualifier" required="true" type="an" maxlength="3" usage="" desc="To qualify a nationality." />
+    <composite_data_element id="C042" name="NationalityDetails" desc="To specify a nationality." />
+  </segment>
+  <segment id="PAC" name="Package" desc="To describe the number and type of packages/physical units.">
+    <data_element id="7224" name="NumberOfPackages" type="n" maxlength="8" usage="" desc="Number of individual parts of a shipment either unpacked, or packed in such a way that they cannot be divided without first undoing the packing." />
+    <composite_data_element id="C531" name="PackagingDetails" desc="Packaging level and details, terms and conditions." />
+    <composite_data_element id="C202" name="PackageType" desc="Type of package by name or by code from a specified source." />
+    <composite_data_element id="C402" name="PackageTypeIdentification" desc="Identification of the form in which goods are described." />
+    <composite_data_element id="C532" name="ReturnablePackageDetails" desc="Indication of responsibility for payment and load contents of returnable packages." />
+  </segment>
+  <segment id="PAI" name="PaymentInstructions" desc="To specify the instructions for payment.">
+    <composite_data_element id="C534" name="PaymentInstructionDetails" required="true" desc="Indication of method of payment employed or to be employed." />
+  </segment>
+  <segment id="PAT" name="PaymentTermsBasis" desc="To specify the payment terms basis.">
+    <data_element id="4279" name="PaymentTermsTypeQualifier" required="true" type="an" maxlength="3" usage="" desc="Identification of the type of payment terms." />
+    <composite_data_element id="C110" name="PaymentTerms" desc="Terms of payment code from a specified source." />
+    <composite_data_element id="C112" name="TermsOrTimeInformation" desc="Time details in payment terms." />
+  </segment>
+  <segment id="PCD" name="PercentageDetails" desc="To specify percentage information.">
+    <composite_data_element id="C501" name="PercentageDetails" required="true" desc="Percentage relating to a specified basis." />
+  </segment>
+  <segment id="PCI" name="PackageIdentification" desc="To specify markings and labels on individual packages or physical units.">
+    <data_element id="4233" name="MarkingInstructionsCoded" type="an" maxlength="3" usage="" desc="Code indicating instructions on how specified packages or physical units should be marked." />
+    <data_element id="8275" name="ContainerOrPackageStatusCoded" type="an" maxlength="3" usage="" desc="Code to identify whether goods of separate description or comprising separate consignments are contained in the same external packaging or to indicate that a container or similar unit load device is empty." />
+    <composite_data_element id="C827" name="TypeOfMarking" desc="Specification of the type of marking that reflects the method that was used and the conventions adhered to for marking (e.g. of packages)." />
+  </segment>
+  <segment id="PDI" name="PersonDemographicInformation" desc="To specify items of person demographic information.">
+    <data_element id="3499" name="SexCoded" type="an" maxlength="3" usage="" desc="Code giving the gender of a person, animal or plant." />
+    <composite_data_element id="C085" name="MaritalStatusDetails" desc="To specify the marital status of a person." />
+    <composite_data_element id="C101" name="ReligionDetails" desc="To specify the religion of a person." />
+  </segment>
+  <segment id="PGI" name="ProductGroupInformation" desc="To indicate the group in which a product belongs.">
+    <data_element id="5379" name="ProductGroupTypeCoded" required="true" type="an" maxlength="3" usage="" desc="Specification of the type of product group used for products." />
+    <composite_data_element id="C288" name="ProductGroup" desc="To give product group information." />
+  </segment>
+  <segment id="PIA" name="AdditionalProductId" desc="To specify additional or substitutional item identification codes.">
+    <composite_data_element id="C212" name="ItemNumberIdentification" required="true" desc="Goods identification for a specified source." />
+    <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source." />
+    <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source." />
+    <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source." />
+    <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source." />
+    <data_element id="1082" name="LineItemNumber" type="n" maxlength="6" usage="" desc="Serial number designating each separate item within a series of articles." />
+    <data_element id="1229" name="ActionRequestOrNotificationCoded" type="an" maxlength="3" usage="" desc="Code specifying the action to be taken or already taken." />
+    <composite_data_element id="C292" name="PriceChangeInformation" desc="A value assigned by the seller to indicate movement of prices from a previous price catalogue." />
+    <data_element id="7011" name="ArticleAvailabilityCoded" type="an" maxlength="3" usage="" desc="Code specifying the production status of an item." />
+    <data_element id="5495" name="SublineIndicatorCoded" type="an" maxlength="3" usage="" desc="Indication that the segment and/or segment group is used for sub-line item information." />
+    <data_element id="1222" name="ConfigurationLevel" type="n" maxlength="2" usage="" desc="Number indicating the level of an object which is in a hierarchy." />
+    <data_element id="7083" name="ConfigurationCoded" type="an" maxlength="3" usage="" desc="Code indicating the status of the sub-line item in the configuration." />
+  </segment>
+  <segment id="PNA" name="PartyName" desc="To specify information necessary to establish the identity of a party.">
+    <data_element id="3035" name="PartyQualifier" required="true" type="an" maxlength="3" usage="" desc="Code giving specific meaning to a party." />
+    <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="3403" name="NameTypeCoded" type="an" maxlength="3" usage="" desc="Code for type of name such as official name, alias." />
+    <data_element id="3397" name="NameStatusCoded" type="an" maxlength="3" usage="" desc="To specify the status of a name (such as current name)." />
+    <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component." />
+    <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component." />
+    <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component." />
+    <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component." />
+    <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component." />
+  </segment>
+  <segment id="PRC" name="ProcessIdentification" desc="To identify a process.">
+    <composite_data_element id="C242" name="ProcessTypeAndDescription" required="true" desc="Identification of process type and description." />
+  </segment>
+  <segment id="PRI" name="PriceDetails" desc="To specify price information.">
+    <composite_data_element id="C509" name="PriceInformation" desc="Identification of price type, price and related details." />
+    <data_element id="5213" name="SublinePriceChangeCoded" type="an" maxlength="3" usage="" desc="Code indicating disposition of the price change of a sub-line item." />
+    <data_element id="4407" name="SampleProcessStatusCoded" type="an" maxlength="3" usage="" desc="Code specifying the stage in the product development cycle at which the specimen was selected for testing." />
+    <data_element id="7039" name="SampleSelectionMethodCoded" type="an" maxlength="3" usage="" desc="Code denoting the method of selecting the test specimen." />
+    <composite_data_element id="C526" name="FrequencyDetails" desc="Number of samples collected per specified unit of measure." />
+    <data_element id="7045" name="SampleDescriptionCoded" type="an" maxlength="3" usage="" desc="Code describing the state of the specimen." />
+    <data_element id="7047" name="SampleDirectionCoded" type="an" maxlength="3" usage="" desc="Code specifying the direction in which the sample was taken." />
+    <composite_data_element id="C514" name="SampleLocationDetails" desc="Identification of location within the specimen, from which the sample was taken." />
+  </segment>
+  <segment id="PTY" name="Priority" desc="The segment is used to communicate priority information.">
+    <data_element id="4035" name="PriorityQualifier" required="true" type="an" maxlength="3" usage="" desc="To indicate the type of a priority." />
+    <composite_data_element id="C585" name="PriorityDetails" desc="To indicate a priority." />
+  </segment>
+  <segment id="QTY" name="Quantity" desc="To specify a pertinent quantity.">
+    <composite_data_element id="C186" name="QuantityDetails" required="true" desc="Quantity information in a transaction, qualified when relevant." />
+  </segment>
+  <segment id="QVR" name="QuantityVariances" desc="To specify item details relating to quantity variances. Note: This segment replaces segment QVA (which has been deleted in this directory).">
+    <composite_data_element id="C279" name="QuantityDifferenceInformation" desc="Information on quantity difference." />
+    <data_element id="4221" name="DiscrepancyCoded" type="an" maxlength="3" usage="" desc="Code defining the disposition of any difference between the quantity ordered and invoiced, or shipped and invoiced for a line item or transaction." />
+    <composite_data_element id="C960" name="ReasonForChange" desc="Code and/or description of the reason for a change." />
+  </segment>
+  <segment id="RCS" name="RequirementsAndConditions" desc="To specify sector/subject requirements and conditions.">
+    <data_element id="7293" name="SectorOrSubjectIdentificationQualifier" required="true" type="an" maxlength="3" usage="" desc="Identification of the subject areas to which the specified conditions apply." />
+    <composite_data_element id="C550" name="RequirementOrConditionIdentification" desc="To identify the specific rule/condition requirement." />
+    <data_element id="1229" name="ActionRequestOrNotificationCoded" type="an" maxlength="3" usage="" desc="Code specifying the action to be taken or already taken." />
+  </segment>
+  <segment id="REL" name="Relationship" desc="To identify the direct relationship between the data/information contained in one segment and the data/information contained in one or more other segments.">
+    <data_element id="9141" name="RelationshipQualifier" required="true" type="an" maxlength="3" usage="" desc="Specification of the meaning of a relationship." />
+    <composite_data_element id="C941" name="Relationship" desc="Identification and/or description of a relationship." />
+  </segment>
+  <segment id="RFF" name="Reference" desc="To specify a reference.">
+    <composite_data_element id="C506" name="Reference" required="true" desc="Identification of a reference." />
+  </segment>
+  <segment id="RNG" name="RangeDetails" desc="To identify a range.">
+    <data_element id="6167" name="RangeTypeQualifier" required="true" type="an" maxlength="3" usage="" desc="Identification of the type of range." />
+    <composite_data_element id="C280" name="Range" desc="Range minimum and maximum limits." />
+  </segment>
+  <segment id="RTE" name="RateDetails" desc="To specify rate information.">
+    <composite_data_element id="C128" name="RateDetails" required="true" desc="Rate per unit and rate basis." />
+  </segment>
+  <segment id="SAL" name="RemunerationTypeIdentification" desc="Identification of a remuneration type.">
+    <composite_data_element id="C049" name="RemunerationTypeIdentification" desc="Identification of the type of a remuneration." />
+  </segment>
+  <segment id="SCC" name="SchedulingConditions" desc="To specify scheduling conditions.">
+    <data_element id="4017" name="DeliveryPlanStatusIndicatorCoded" required="true" type="an" maxlength="3" usage="" desc="Code indicating the level of commitment of schedule information." />
+    <data_element id="4493" name="DeliveryRequirementsCoded" type="an" maxlength="3" usage="" desc="Indication of general instruction for delivery." />
+    <composite_data_element id="C329" name="PatternDescription" desc="Shipment, delivery or production interval pattern and timing." />
+  </segment>
+  <segment id="SCD" name="StructureComponentDefinition" desc="To specify a component of a data structure (e.g. an array or table).">
+    <data_element id="7497" name="ComponentFunctionQualifier" required="true" type="an" maxlength="3" usage="" desc="To identify the function of a structure component." />
+    <composite_data_element id="C786" name="StructureComponentIdentification" desc="The identification of a structure component." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="1222" name="ConfigurationLevel" type="n" maxlength="2" usage="" desc="Number indicating the level of an object which is in a hierarchy." />
+    <composite_data_element id="C778" name="PositionIdentification" desc="To identify the position of an object in a structure containing the object." />
+    <composite_data_element id="C240" name="ProductCharacteristic" desc="Specific product characteristic data." />
+  </segment>
+  <segment id="SEG" name="SegmentIdentification" desc="To identify a segment and give its class and maintenance operation.">
+    <data_element id="9166" name="SegmentTag" required="true" type="an" maxlength="3" usage="" desc="Tag of a segment." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="SEL" name="SealNumber" desc="To specify a seal number related to equipment.">
+    <data_element id="9308" name="SealNumber" required="true" type="an" maxlength="10" usage="" desc="The number of a custom seal or another seal affixed to the containers or other transport unit." />
+    <composite_data_element id="C215" name="SealIssuer" desc="Identification of the issuer of a seal on equipment either by code or by name." />
+    <data_element id="4517" name="SealConditionCoded" type="an" maxlength="3" usage="" desc="To indicate the condition of a seal." />
+  </segment>
+  <segment id="SEQ" name="SequenceDetails" desc="To provide specific details related to the delivery sequence.">
+    <data_element id="1245" name="StatusIndicatorCoded" type="an" maxlength="3" usage="" desc="Specification of a status or disposition." />
+    <composite_data_element id="C286" name="SequenceInformation" desc="Identification of a sequence and source for sequencing." />
+  </segment>
+  <segment id="SFI" name="SafetyInformation" desc="To identify regulatory safety information.">
+    <composite_data_element id="C814" name="SafetySection" desc="To identify the safety section to which information relates." />
+    <composite_data_element id="C815" name="AdditionalSafetyInformation" desc="To identify additional safety information." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="SGP" name="SplitGoodsPlacement" desc="To specify the placement of goods in relation to equipment.">
+    <composite_data_element id="C237" name="EquipmentIdentification" required="true" desc="Marks (letters and/or numbers) identifying equipment used for transport such as a container." />
+    <data_element id="7224" name="NumberOfPackages" type="n" maxlength="8" usage="" desc="Number of individual parts of a shipment either unpacked, or packed in such a way that they cannot be divided without first undoing the packing." />
+  </segment>
+  <segment id="SGU" name="SegmentUsageDetails" desc="To specify the details of the usage of a segment within a message type structure.">
+    <data_element id="9166" name="SegmentTag" required="true" type="an" maxlength="3" usage="" desc="Tag of a segment." />
+    <data_element id="7299" name="RequirementDesignatorCoded" type="an" maxlength="3" usage="" desc="To specify the designated requirement." />
+    <data_element id="6176" name="MaximumNumberOfOccurrences" type="n" maxlength="7" usage="" desc="To specify the maximum number of occurrences." />
+    <data_element id="7168" name="LevelNumber" type="n" maxlength="1" usage="" desc="Relative hierarchical position of a data segment within a message as expressed in a branching diagram." />
+    <data_element id="1050" name="SequenceNumber" type="an" maxlength="6" usage="" desc="Number indicating the position in a sequence." />
+    <data_element id="1049" name="MessageSectionCoded" type="an" maxlength="3" usage="" desc="Recognition of a particular part of a message." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="SPS" name="SamplingParametersForSummaryStatistics" desc="To define the sampling parameters associated with summary statistics reported.">
+    <composite_data_element id="C526" name="FrequencyDetails" desc="Number of samples collected per specified unit of measure." />
+    <data_element id="6074" name="ConfidenceLimit" type="n" maxlength="6" usage="" desc="A percent value expressing the confidence that a true value falls within a certain confidence interval." />
+    <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations." />
+    <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations." />
+    <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations." />
+    <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations." />
+    <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations." />
+  </segment>
+  <segment id="STA" name="Statistics" desc="To transmit summary statistics related to a specified collection of test result values.">
+    <data_element id="6331" name="StatisticTypeCoded" required="true" type="an" maxlength="3" usage="" desc="Specification of the specific statistic being reported." />
+    <composite_data_element id="C527" name="StatisticalDetails" desc="Specifications related to statistical measurements." />
+  </segment>
+  <segment id="STC" name="StatisticalConcept" desc="To specify a statistical concept.">
+    <composite_data_element id="C785" name="StatisticalConceptIdentification" required="true" desc="The identification of a statistical concept." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+  <segment id="STG" name="Stages" desc="To provide information related to the kind of stage in a process, the number of stages and the actual stage.">
+    <data_element id="9421" name="StagesQualifier" required="true" type="an" maxlength="3" usage="" desc="Code identifying the kind of stage in a process." />
+    <data_element id="6426" name="NumberOfStages" type="n" maxlength="2" usage="" desc="Count of the number of stages that will be used in the process." />
+    <data_element id="6428" name="ActualStageCount" type="n" maxlength="2" usage="" desc="Count of the actual number of stages agreed in a process." />
+  </segment>
+  <segment id="STS" name="Status" desc="To specify the type of industry sector/application to which this segment refers, giving the status and status reason relevant to conducting business and/or services.">
+    <composite_data_element id="C601" name="StatusType" desc="To specify the type of status in relation to an industry sector or business function." />
+    <composite_data_element id="C555" name="StatusEvent" desc="To specify a status event." />
+    <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event." />
+    <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event." />
+    <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event." />
+    <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event." />
+    <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event." />
+  </segment>
+  <segment id="TAX" name="DutyOrTaxOrFeeDetails" desc="To specify relevant duty/tax/fee information.">
+    <data_element id="5283" name="DutyOrTaxOrFeeFunctionQualifier" required="true" type="an" maxlength="3" usage="" desc="Code identifying the function of an duty, tax or fee information." />
+    <composite_data_element id="C241" name="DutyOrTaxOrFeeType" desc="Code and/or name identifying duty, tax or fee." />
+    <composite_data_element id="C533" name="DutyOrTaxOrFeeAccountDetail" desc="Indication of account reference for duties, taxes and/or fees." />
+    <data_element id="5286" name="DutyOrTaxOrFeeAssessmentBasis" type="an" maxlength="15" usage="" desc="Value or quantity on which a duty or tax will be assessed." />
+    <composite_data_element id="C243" name="DutyOrTaxOrFeeDetail" desc="Rate of duty/tax/fee applicable to commodities or of tax applicable to services." />
+    <data_element id="5305" name="DutyOrTaxOrFeeCategoryCoded" type="an" maxlength="3" usage="" desc="Code identifying a tax/duty/fee category within a tax/duty/fee type system." />
+    <data_element id="3446" name="PartyTaxIdentificationNumber" type="an" maxlength="20" usage="" desc="Number assigned to a purchaser (buyer, orderer) by a tax jurisdiction (state, country, etc)." />
+  </segment>
+  <segment id="TCC" name="TransportChargeOrRateCalculations" desc="To specify charges.">
+    <composite_data_element id="C200" name="Charge" desc="Identification of a charge by code and/or by name." />
+    <composite_data_element id="C203" name="RateOrTariffClass" desc="Identification of the applicable rate/tariff class." />
+    <composite_data_element id="C528" name="CommodityOrRateDetail" desc="Identification of commodity/rates." />
+    <composite_data_element id="C554" name="RateOrTariffClassDetail" desc="Identification of the applicable rate/tariff class." />
+  </segment>
+  <segment id="TDT" name="DetailsOfTransport" desc="To specify the transport details such as mode of transport, means of transport, its conveyance reference number and the identification of the means of transport. The segment may be pointed to by the TPL segment.">
+    <data_element id="8051" name="TransportStageQualifier" required="true" type="an" maxlength="3" usage="" desc="Qualifier giving a specific meaning to the transport details." />
+    <data_element id="8028" name="ConveyanceReferenceNumber" type="an" maxlength="17" usage="" desc="Unique reference given by the carrier to a certain journey or departure of a means of transport (generic term)." />
+    <composite_data_element id="C220" name="ModeOfTransport" desc="Method of transport code or name. Code preferred." />
+    <composite_data_element id="C228" name="TransportMeans" desc="Code and/or name identifying the type of means of transport." />
+    <composite_data_element id="C040" name="Carrier" desc="Identification of a carrier by code and/or by name. Code preferred." />
+    <data_element id="8101" name="TransitDirectionCoded" type="an" maxlength="3" usage="" desc="Identification of the point of origin and point of direction." />
+    <composite_data_element id="C401" name="ExcessTransportationInformation" desc="To provide details of reason for, and responsibility for, use of transportation other than normally utilized." />
+    <composite_data_element id="C222" name="TransportIdentification" desc="Code and/or name identifying the means of transport." />
+    <data_element id="8281" name="TransportOwnershipCoded" type="an" maxlength="3" usage="" desc="Code indicating the ownership of the means of transport." />
+  </segment>
+  <segment id="TEM" name="TestMethod" desc="To describe the nature of the test performed.">
+    <composite_data_element id="C244" name="TestMethod" desc="Specification of the test method employed." />
+    <data_element id="4419" name="TestRouteOfAdministeringCoded" type="an" maxlength="3" usage="" desc="Code specifying the method of administering the test, e.g. oral, inhalation." />
+    <data_element id="3077" name="TestMediaCoded" type="an" maxlength="3" usage="" desc="Code specifying the medium on which the test was applied, e.g. animal, human." />
+    <data_element id="6311" name="MeasurementApplicationQualifier" type="an" maxlength="3" usage="" desc="Specification of the application of the physical measurement used." />
+    <data_element id="7188" name="TestRevisionNumber" type="an" maxlength="30" usage="" desc="Definition of the revision or of the change level of the specified test method employed." />
+    <composite_data_element id="C515" name="TestReason" desc="To identify the reason for the test as specified." />
+    <composite_data_element id="C219" name="MovementType" desc="Description of type of service for movement of cargo." />
+    <data_element id="8332" name="EquipmentPlan" type="an" maxlength="26" usage="" desc="Description indicating equipment plan, e.g. FCL or LCL." />
+    <data_element id="8341" name="HaulageArrangementsCoded" type="an" maxlength="3" usage="" desc="Specification of the type of equipment haulage arrangements." />
+  </segment>
+  <segment id="TMP" name="Temperature" desc="To specify the temperature setting.">
+    <data_element id="6245" name="TemperatureQualifier" required="true" type="an" maxlength="3" usage="" desc="A code giving specific meaning to the temperature." />
+    <composite_data_element id="C239" name="TemperatureSetting" desc="The temperature under which the goods are (to be) stored or shipped." />
+  </segment>
+  <segment id="TOD" name="TermsOfDeliveryOrTransport" desc="To specify terms of delivery or transport.">
+    <data_element id="4055" name="TermsOfDeliveryOrTransportFunctionCoded" type="an" maxlength="3" usage="" desc="Indication whether the terms relate to e.g. price conditions, delivery conditions, transport conditions, or a combination of these." />
+    <data_element id="4215" name="TransportChargesMethodOfPaymentCoded" type="an" maxlength="3" usage="" desc="Identification of method of payment for transport charges." />
+    <composite_data_element id="C100" name="TermsOfDeliveryOrTransport" desc="Terms of delivery or transport code from a specified source." />
+  </segment>
+  <segment id="TPL" name="TransportPlacement" desc="To specify placement of goods or equipment in relation to the transport used. The segment serves as a pointer to the TDT segment group.">
+    <composite_data_element id="C222" name="TransportIdentification" required="true" desc="Code and/or name identifying the means of transport." />
+  </segment>
+  <segment id="TSR" name="TransportServiceRequirements" desc="To specify the contract and carriage conditions and service and priority requirements for the transport.">
+    <composite_data_element id="C536" name="ContractAndCarriageCondition" desc="To identify a contract and carriage condition." />
+    <composite_data_element id="C233" name="Service" desc="" />
+    <composite_data_element id="C537" name="TransportPriority" desc="To indicate the priority of requested transport service." />
+    <composite_data_element id="C703" name="NatureOfCargo" desc="Rough classification of a type of cargo." />
+  </segment>
+  <segment id="VLI" name="ValueListIdentification" desc="To identify a coded or non coded value list.">
+    <composite_data_element id="C780" name="ValueListIdentification" required="true" desc="The identification of a coded or non coded value list." />
+    <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code." />
+    <data_element id="4405" name="StatusCoded" type="an" maxlength="3" usage="" desc="Provides information regarding a status." />
+    <data_element id="1514" name="ValueListName" type="an" maxlength="70" usage="" desc="The name of a list of coded or non coded values." />
+    <data_element id="1507" name="ClassDesignatorCoded" type="an" maxlength="3" usage="" desc="To identify a designated class." />
+    <data_element id="1505" name="ValueListTypeCoded" type="an" maxlength="3" usage="" desc="A code indicating the type of value list." />
+    <composite_data_element id="C240" name="ProductCharacteristic" desc="Specific product characteristic data." />
+    <data_element id="4513" name="MaintenanceOperationCoded" type="an" maxlength="3" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." />
+  </segment>
+</segments>

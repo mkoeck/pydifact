@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data_elements>
+  <data_element id="1000" name="DocumentOrMessageName" usage="" desc="Plain language identifier specifying the function of a document/message." type="an" maxlength="35"/>
+  <data_element id="1001" name="DocumentOrMessageNameCoded" usage="" desc="Document/message identifier expressed in code." type="an" maxlength="3"/>
+  <data_element id="1004" name="DocumentOrMessageNumber" usage="" desc="Reference number assigned to the document/message by the issuer." type="an" maxlength="35"/>
+  <data_element id="1049" name="MessageSectionCoded" usage="" desc="Recognition of a particular part of a message." type="an" maxlength="3"/>
+  <data_element id="1050" name="SequenceNumber" usage="" desc="Number indicating the position in a sequence." type="an" maxlength="6"/>
+  <data_element id="1052" name="MessageItemNumber" usage="" desc="The referenced number allocated to an identifiable item in a message. eg Customs item or invoice item." type="an" maxlength="35"/>
+  <data_element id="1054" name="MessageSubitemNumber" usage="" desc="The reference number allocated to an identifiable sub-item in a message. eg: invoice line number." type="n" maxlength="6"/>
+  <data_element id="1056" name="Version" usage="" desc="To specify the version number or name of an object." type="an" maxlength="9"/>
+  <data_element id="1058" name="Release" usage="" desc="To specify the release number or release name of an object." type="an" maxlength="9"/>
+  <data_element id="1060" name="RevisionNumber" usage="" desc="To specify a revision number." type="an" maxlength="6"/>
+  <data_element id="1073" name="DocumentLineIndicatorCoded" usage="" desc="Code indicating if a document line is included or excluded for processing purposes." type="an" maxlength="3"/>
+  <data_element id="1082" name="LineItemNumber" usage="" desc="Serial number designating each separate item within a series of articles." type="n" maxlength="6"/>
+  <data_element id="1131" name="CodeListQualifier" usage="" desc="Identification of a code list." type="an" maxlength="3"/>
+  <data_element id="1153" name="ReferenceQualifier" usage="" desc="Code giving specific meaning to a reference segment or a reference number." type="an" maxlength="3"/>
+  <data_element id="1154" name="ReferenceNumber" usage="" desc="Identification number the nature and function of which can be qualified by an entry in data element 1153 Reference qualifier." type="an" maxlength="35"/>
+  <data_element id="1156" name="LineNumber" usage="" desc="Number of the line in the document/message referenced in 1154 Reference number." type="an" maxlength="6"/>
+  <data_element id="1159" name="SequenceNumberSourceCoded" usage="" desc="Specification of the source for a specified sequence number in a coded form." type="an" maxlength="3"/>
+  <data_element id="1218" name="NumberOfOriginalsOfDocumentRequired" usage="" desc="Specification of the number of originals of a stipulated document that are required." type="n" maxlength="2"/>
+  <data_element id="1220" name="NumberOfCopiesOfDocumentRequired" usage="" desc="Number of originals or copies of a document stipulated or referred to as being required." type="n" maxlength="2"/>
+  <data_element id="1222" name="ConfigurationLevel" usage="" desc="Number indicating the level of an object which is in a hierarchy." type="n" maxlength="2"/>
+  <data_element id="1225" name="MessageFunctionCoded" usage="" desc="Code indicating the function of the message." type="an" maxlength="3"/>
+  <data_element id="1227" name="CalculationSequenceIndicatorCoded" usage="" desc="Code indicating the sequence of cumulated calculations to be agreed between interchange partners." type="an" maxlength="3"/>
+  <data_element id="1228" name="ActionRequestOrNotification" usage="" desc="Plain text specifying action taken or to be taken." type="an" maxlength="35"/>
+  <data_element id="1229" name="ActionRequestOrNotificationCoded" usage="" desc="Code specifying the action to be taken or already taken." type="an" maxlength="3"/>
+  <data_element id="1230" name="AllowanceOrChargeNumber" usage="" desc="Number assigned by a party referencing an allowance, promotion, deal or charge." type="an" maxlength="35"/>
+  <data_element id="1245" name="StatusIndicatorCoded" usage="" desc="Specification of a status or disposition." type="an" maxlength="3"/>
+  <data_element id="1312" name="ConsignmentLoadSequenceNumber" usage="" desc="To indicate the sequence of loading in which the consignments are loaded in a piece of equipment or in a means of transport (e.g. truck)." type="n" maxlength="4"/>
+  <data_element id="1366" name="DocumentOrMessageSource" usage="" desc="Indication of the source from which the printed information is to be or has been obtained." type="an" maxlength="35"/>
+  <data_element id="1373" name="DocumentOrMessageStatusCoded" usage="" desc="To identify the status of a document/message." type="an" maxlength="3"/>
+  <data_element id="1475" name="MessageTypeIdentifier" usage="" desc="Code identifying a type of message as assigned by its controlling agency." type="an" maxlength="6"/>
+  <data_element id="1476" name="ControlAgency" usage="" desc="Identification of the agency controlling the specification, maintenance and publication of the message." type="an" maxlength="2"/>
+  <data_element id="1490" name="ConsolidationItemNumber" usage="" desc="Serial number differentiating each separate consignment included in the consolidation." type="n" maxlength="4"/>
+  <data_element id="1496" name="GoodsItemNumber" usage="" desc="Serial number differentiating each separate goods item entry of a consignment as contained in one document/declaration." type="n" maxlength="5"/>
+  <data_element id="1501" name="ComputerEnvironmentDetailsQualifier" usage="" desc="A code to identify the computer environment details." type="an" maxlength="3"/>
+  <data_element id="1502" name="DataFormat" usage="" desc="To describe a data format in free form." type="an" maxlength="35"/>
+  <data_element id="1503" name="DataFormatCoded" usage="" desc="A code to identify the data format." type="an" maxlength="3"/>
+  <data_element id="1505" name="ValueListTypeCoded" usage="" desc="A code indicating the type of value list." type="an" maxlength="3"/>
+  <data_element id="1507" name="ClassDesignatorCoded" usage="" desc="To identify a designated class." type="an" maxlength="3"/>
+  <data_element id="1508" name="FileName" usage="" desc="Name assigned to a file." type="an" maxlength="35"/>
+  <data_element id="1510" name="ComputerEnvironment" usage="" desc="To define the product name of the specified computer environment part." type="an" maxlength="35"/>
+  <data_element id="1511" name="ComputerEnvironmentCoded" usage="" desc="A code to identify the computer environment." type="an" maxlength="3"/>
+  <data_element id="1514" name="ValueListName" usage="" desc="The name of a list of coded or non coded values." type="an" maxlength="70"/>
+  <data_element id="1516" name="FileFormat" usage="" desc="To give an identification of the file format." type="an" maxlength="17"/>
+  <data_element id="1518" name="ValueListIdentifier" usage="" desc="The identifier of a coded or non coded value list." type="an" maxlength="35"/>
+  <data_element id="1520" name="DataSetIdentifier" usage="" desc="The identifier of a data set." type="an" maxlength="35"/>
+  <data_element id="1523" name="AssociationAssignedIdentification" usage="" desc="An association assigned code to further identify implementation of a message." type="an" maxlength="6"/>
+  <data_element id="2005" name="DateOrTimeOrPeriodQualifier" usage="" desc="Code giving specific meaning to a date, time or period." type="an" maxlength="3"/>
+  <data_element id="2009" name="TimeRelationCoded" usage="" desc="Code relating payment terms to a time before, on or after the reference date." type="an" maxlength="3"/>
+  <data_element id="2013" name="FrequencyCoded" usage="" desc="Code specifying interval grouping of the delivery, production, etc. of the schedule." type="an" maxlength="3"/>
+  <data_element id="2015" name="DespatchPatternCoded" usage="" desc="Code specifying the days/periods for routine shipments or deliveries." type="an" maxlength="3"/>
+  <data_element id="2017" name="DespatchPatternTimingCoded" usage="" desc="Code specifying the detailed times for routine shipments or deliveries within data element 2015 Despatch pattern, coded." type="an" maxlength="3"/>
+  <data_element id="2151" name="TypeOfPeriodCoded" usage="" desc="Agreed or specified period of time (coded)." type="an" maxlength="3"/>
+  <data_element id="2152" name="NumberOfPeriods" usage="" desc="Number of periods of the type indicated in data element 2151 Type of period, coded." type="n" maxlength="3"/>
+  <data_element id="2379" name="DateOrTimeOrPeriodFormatQualifier" usage="" desc="Specification of the representation of a date, a date and time or of a period." type="an" maxlength="3"/>
+  <data_element id="2380" name="DateOrTimeOrPeriod" usage="" desc="The value of a date, a date and time, a time or of a period in a specified representation." type="an" maxlength="35"/>
+  <data_element id="2475" name="PaymentTimeReferenceCoded" usage="" desc="Code relating payment terms to the date of a specific event." type="an" maxlength="3"/>
+  <data_element id="3035" name="PartyQualifier" usage="" desc="Code giving specific meaning to a party." type="an" maxlength="3"/>
+  <data_element id="3036" name="PartyName" usage="" desc="Name of a party involved in a transaction." type="an" maxlength="35"/>
+  <data_element id="3039" name="PartyId.Identification" usage="" desc="Code identifying a party involved in a transaction." type="an" maxlength="35"/>
+  <data_element id="3042" name="StreetAndNumberOrP.o.Box" usage="" desc="Street and number in plain language, or Post Office Box No." type="an" maxlength="35"/>
+  <data_element id="3045" name="PartyNameFormatCoded" usage="" desc="Specification of the representation of a party name." type="an" maxlength="3"/>
+  <data_element id="3055" name="CodeListResponsibleAgencyCoded" usage="" desc="Code identifying the agency responsible for a code list." type="an" maxlength="3"/>
+  <data_element id="3077" name="TestMediaCoded" usage="" desc="Code specifying the medium on which the test was applied, e.g. animal, human." type="an" maxlength="3"/>
+  <data_element id="3124" name="NameAndAddressLine" usage="" desc="Free form name and address description." type="an" maxlength="35"/>
+  <data_element id="3127" name="CarrierIdentification" usage="" desc="Identification of party undertaking or arranging transport of goods between named points." type="an" maxlength="17"/>
+  <data_element id="3128" name="CarrierName" usage="" desc="Name of party undertaking or arranging transport of goods between named points." type="an" maxlength="35"/>
+  <data_element id="3131" name="AddressTypeCoded" usage="" desc="To specify the type of address." type="an" maxlength="3"/>
+  <data_element id="3139" name="ContactFunctionCoded" usage="" desc="Code specifying the function of a contact (e.g. department or person)." type="an" maxlength="3"/>
+  <data_element id="3153" name="CommunicationChannelIdentifierCoded" usage="" desc="Code identifying the type of communication channel being used." type="an" maxlength="3"/>
+  <data_element id="3155" name="CommunicationChannelQualifier" usage="" desc="Code identifying the type of communication channel being used." type="an" maxlength="3"/>
+  <data_element id="3164" name="CityName" usage="" desc="Name of a city (a town, a village) for addressing purposes." type="an" maxlength="35"/>
+  <data_element id="3192" name="AccountHolderName" usage="" desc="Name of the holder of the account." type="an" maxlength="35"/>
+  <data_element id="3194" name="AccountHolderNumber" usage="" desc="Account number of the holder of the account." type="an" maxlength="35"/>
+  <data_element id="3207" name="CountryCoded" usage="" desc="Identification of the name of a country or other geographical entity as specified in ISO 3166." type="an" maxlength="3"/>
+  <data_element id="3222" name="RelatedPlaceOrLocationOne" usage="" desc="Specification of the first related place/location by name." type="an" maxlength="70"/>
+  <data_element id="3223" name="RelatedPlaceOrLocationOneIdentification" usage="" desc="Specification of the first related place/location by code." type="an" maxlength="25"/>
+  <data_element id="3224" name="PlaceOrLocation" usage="" desc="Name of place/location, other than 3164 City name." type="an" maxlength="70"/>
+  <data_element id="3225" name="PlaceOrLocationIdentification" usage="" desc="Identification of the name of place/location, other than 3164 City name." type="an" maxlength="25"/>
+  <data_element id="3227" name="PlaceOrLocationQualifier" usage="" desc="Code identifying the function of a location." type="an" maxlength="3"/>
+  <data_element id="3228" name="CountrySubentity" usage="" desc="Name of sub-entities (state, province) defined by appropriate governmental agencies." type="an" maxlength="35"/>
+  <data_element id="3229" name="CountrySubentityIdentification" usage="" desc="Identification of the name of sub-entities (state, province) defined by appropriate governmental agencies." type="an" maxlength="9"/>
+  <data_element id="3232" name="RelatedPlaceOrLocationTwo" usage="" desc="Specification of a second related place/location by name." type="an" maxlength="70"/>
+  <data_element id="3233" name="RelatedPlaceOrLocationTwoIdentification" usage="" desc="Specification of a second related place/location by code." type="an" maxlength="25"/>
+  <data_element id="3236" name="SampleLocation" usage="" desc="Free form description of the location within the specimen, from which the sample was taken." type="an" maxlength="35"/>
+  <data_element id="3237" name="SampleLocationCoded" usage="" desc="Code specifying the location, within the specimen, from which the sample was taken." type="an" maxlength="3"/>
+  <data_element id="3239" name="CountryOfOriginCoded" usage="" desc="Country in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, of quantitative restrictions, or of any other measure related to trade." type="an" maxlength="3"/>
+  <data_element id="3251" name="PostcodeIdentification" usage="" desc="Code defining postal zones or addresses." type="an" maxlength="9"/>
+  <data_element id="3279" name="GeographicEnvironmentCoded" usage="" desc="Describe the geographic area for message." type="an" maxlength="3"/>
+  <data_element id="3285" name="RecipientOfTheInstructionIdentification" usage="" desc="Party to whom the instruction is directed for advice or action." type="an" maxlength="17"/>
+  <data_element id="3286" name="AddressComponent" usage="" desc="To specify a component of an address." type="an" maxlength="70"/>
+  <data_element id="3289" name="PersonCharacteristicQualifier" usage="" desc="To specify the type of specific person characteristic." type="an" maxlength="3"/>
+  <data_element id="3292" name="Nationality" usage="" desc="Name of country of which an entity is the subject." type="a" maxlength="35"/>
+  <data_element id="3293" name="NationalityCoded" usage="" desc="Code for country of which an entity is the subject." type="an" maxlength="3"/>
+  <data_element id="3295" name="NameComponentOriginalRepresentationCoded" usage="" desc="To specify the alphabet originally used to represent the name." type="an" maxlength="3"/>
+  <data_element id="3299" name="AddressPurposeCoded" usage="" desc="To specify the purpose of the address." type="an" maxlength="3"/>
+  <data_element id="3301" name="PartyEnactingInstructionIdentification" usage="" desc="Party responsible for carrying out the instruction." type="an" maxlength="17"/>
+  <data_element id="3310" name="PersonInheritedCharacteristic" usage="" desc="To specify a person inherited characteristic as free text." type="an" maxlength="70"/>
+  <data_element id="3311" name="PersonInheritedCharacteristicIdentification" usage="" desc="To specify a person inherited characteristic using a code value." type="an" maxlength="8"/>
+  <data_element id="3397" name="NameStatusCoded" usage="" desc="To specify the status of a name (such as current name)." type="an" maxlength="3"/>
+  <data_element id="3398" name="NameComponent" usage="" desc="Part of party name such as family name or given name." type="an" maxlength="70"/>
+  <data_element id="3401" name="NameComponentStatusCoded" usage="" desc="To specify the status of a name component." type="an" maxlength="3"/>
+  <data_element id="3403" name="NameTypeCoded" usage="" desc="Code for type of name such as official name, alias." type="an" maxlength="3"/>
+  <data_element id="3405" name="NameComponentQualifier" usage="" desc="To indicate a part of the name such as family name or given name." type="an" maxlength="3"/>
+  <data_element id="3412" name="DepartmentOrEmployee" usage="" desc="The department or person within an organizational entity." type="an" maxlength="35"/>
+  <data_element id="3413" name="DepartmentOrEmployeeIdentification" usage="" desc="Internal identification code." type="an" maxlength="17"/>
+  <data_element id="3432" name="InstitutionName" usage="" desc="Name of an institution." type="an" maxlength="70"/>
+  <data_element id="3433" name="InstitutionNameIdentification" usage="" desc="Code identifying an institution." type="an" maxlength="11"/>
+  <data_element id="3434" name="InstitutionBranchNumber" usage="" desc="Number identifying a branch of an institution." type="an" maxlength="17"/>
+  <data_element id="3436" name="InstitutionBranchPlace" usage="" desc="Official name of the place where the institution branch is situated." type="an" maxlength="70"/>
+  <data_element id="3446" name="PartyTaxIdentificationNumber" usage="" desc="Number assigned to a purchaser (buyer, orderer) by a tax jurisdiction (state, country, etc)." type="an" maxlength="20"/>
+  <data_element id="3452" name="Language" usage="" desc="Language as text (ISO 639-1988)." type="an" maxlength="35"/>
+  <data_element id="3453" name="LanguageCoded" usage="" desc="Code of language (ISO 639-1988)." type="an" maxlength="3"/>
+  <data_element id="3455" name="LanguageQualifier" usage="" desc="Type of language." type="an" maxlength="3"/>
+  <data_element id="3475" name="AddressStatusCoded" usage="" desc="To specify the status of the address." type="an" maxlength="3"/>
+  <data_element id="3477" name="AddressFormatCoded" usage="" desc="To specify the content of the various address components." type="an" maxlength="3"/>
+  <data_element id="3478" name="MaritalStatus" usage="" desc="Marital status of a person." type="an" maxlength="35"/>
+  <data_element id="3479" name="MaritalStatusCoded" usage="" desc="Code giving the marital status of a person." type="an" maxlength="3"/>
+  <data_element id="3482" name="Religion" usage="" desc="To specify the religion of a person." type="an" maxlength="35"/>
+  <data_element id="3483" name="ReligionCoded" usage="" desc="To specify the religion of a person in a coded form." type="an" maxlength="3"/>
+  <data_element id="3493" name="NationalityQualifier" usage="" desc="To qualify a nationality." type="an" maxlength="3"/>
+  <data_element id="3494" name="JobTitle" usage="" desc="Description of job classification." type="an" maxlength="35"/>
+  <data_element id="3496" name="SalesChannelIdentifier" usage="" desc="Code identifying a sales channel for marketing information." type="an" maxlength="17"/>
+  <data_element id="3499" name="SexCoded" usage="" desc="Code giving the gender of a person, animal or plant." type="an" maxlength="3"/>
+  <data_element id="4000" name="ReferenceVersionNumber" usage="" desc="To uniquely identify a reference by its revision number." type="an" maxlength="35"/>
+  <data_element id="4017" name="DeliveryPlanStatusIndicatorCoded" usage="" desc="Code indicating the level of commitment of schedule information." type="an" maxlength="3"/>
+  <data_element id="4022" name="BusinessDescription" usage="" desc="Description of a business." type="an" maxlength="70"/>
+  <data_element id="4025" name="BusinessFunctionCoded" usage="" desc="Code describing the specific business function." type="an" maxlength="3"/>
+  <data_element id="4027" name="BusinessFunctionQualifier" usage="" desc="Specification of the type of business function." type="an" maxlength="3"/>
+  <data_element id="4035" name="PriorityQualifier" usage="" desc="To indicate the type of a priority." type="an" maxlength="3"/>
+  <data_element id="4036" name="Priority" usage="" desc="To indicate a priority." type="an" maxlength="35"/>
+  <data_element id="4037" name="PriorityCoded" usage="" desc="To indicate a priority in coded form." type="an" maxlength="3"/>
+  <data_element id="4038" name="AdditionalSafetyInformation" usage="" desc="Element to enable additional safety information to be specified as free text." type="an" maxlength="35"/>
+  <data_element id="4039" name="AdditionalSafetyInformationCoded" usage="" desc="Element to identify the additional safety information in coded form." type="an" maxlength="3"/>
+  <data_element id="4043" name="ClassOfTradeCoded" usage="" desc="Code identifying the class of trade." type="an" maxlength="3"/>
+  <data_element id="4044" name="SafetySectionName" usage="" desc="To identify the safety section name." type="an" maxlength="70"/>
+  <data_element id="4046" name="SafetySection" usage="" desc="To identify the safety section number." type="n" maxlength="2"/>
+  <data_element id="4052" name="TermsOfDeliveryOrTransport" usage="" desc="Terms agreed between two parties (e.g. seller/buyer, shipper/carrier) under which a product or service is provided." type="an" maxlength="70"/>
+  <data_element id="4053" name="TermsOfDeliveryOrTransportCoded" usage="" desc="Identification of the terms agreed between two parties (e.g. seller/buyer, shipper/carrier) under which a product or service is provided." type="an" maxlength="3"/>
+  <data_element id="4055" name="TermsOfDeliveryOrTransportFunctionCoded" usage="" desc="Indication whether the terms relate to e.g. price conditions, delivery conditions, transport conditions, or a combination of these." type="an" maxlength="3"/>
+  <data_element id="4065" name="ContractAndCarriageConditionCoded" usage="" desc="Code to identify the conditions of contract and carriage." type="an" maxlength="3"/>
+  <data_element id="4078" name="HandlingInstructions" usage="" desc="Instructions on how specified goods, packages or containers should be handled." type="an" maxlength="70"/>
+  <data_element id="4079" name="HandlingInstructionsCoded" usage="" desc="Identification of the instructions on how specified goods, packages or containers should be handled." type="an" maxlength="3"/>
+  <data_element id="4183" name="SpecialConditionsCoded" usage="" desc="Indication of a specific condition." type="an" maxlength="3"/>
+  <data_element id="4215" name="TransportChargesMethodOfPaymentCoded" usage="" desc="Identification of method of payment for transport charges." type="an" maxlength="3"/>
+  <data_element id="4219" name="TransportPriorityCoded" usage="" desc="Coded priority of requested transport service." type="an" maxlength="3"/>
+  <data_element id="4221" name="DiscrepancyCoded" usage="" desc="Code defining the disposition of any difference between the quantity ordered and invoiced, or shipped and invoiced for a line item or transaction." type="an" maxlength="3"/>
+  <data_element id="4233" name="MarkingInstructionsCoded" usage="" desc="Code indicating instructions on how specified packages or physical units should be marked." type="an" maxlength="3"/>
+  <data_element id="4237" name="PrepaidOrCollectIndicatorCoded" usage="" desc="Code indicating whether freight item amount is prepaid or to be collected." type="an" maxlength="3"/>
+  <data_element id="4276" name="TermsOfPayment" usage="" desc="Conditions of payment between the parties to a transaction (generic term)." type="an" maxlength="35"/>
+  <data_element id="4277" name="TermsOfPaymentIdentification" usage="" desc="Identification of the terms of payment between the parties to a transaction (generic term)." type="an" maxlength="17"/>
+  <data_element id="4279" name="PaymentTermsTypeQualifier" usage="" desc="Identification of the type of payment terms." type="an" maxlength="3"/>
+  <data_element id="4294" name="ChangeReason" usage="" desc="Description of the reason for a change." type="an" maxlength="35"/>
+  <data_element id="4295" name="ChangeReasonCoded" usage="" desc="Identification of the reason for a change." type="an" maxlength="3"/>
+  <data_element id="4343" name="ResponseTypeCoded" usage="" desc="Code specifying the type of acknowledgement required or transmitted." type="an" maxlength="3"/>
+  <data_element id="4347" name="ProductId.FunctionQualifier" usage="" desc="Indication of the function of the product code." type="an" maxlength="3"/>
+  <data_element id="4383" name="BankOperationCoded" usage="" desc="Describe the method to transfer funds in coded form." type="an" maxlength="3"/>
+  <data_element id="4400" name="Instruction" usage="" desc="Description of an instruction." type="an" maxlength="35"/>
+  <data_element id="4401" name="InstructionCoded" usage="" desc="Specification of an action to be taken by the receiver of the message." type="an" maxlength="3"/>
+  <data_element id="4403" name="InstructionQualifier" usage="" desc="Code giving specific meaning to the type of instructions." type="an" maxlength="3"/>
+  <data_element id="4405" name="StatusCoded" usage="" desc="Provides information regarding a status." type="an" maxlength="3"/>
+  <data_element id="4407" name="SampleProcessStatusCoded" usage="" desc="Code specifying the stage in the product development cycle at which the specimen was selected for testing." type="an" maxlength="3"/>
+  <data_element id="4415" name="TestMethodIdentification" usage="" desc="Code to specify the test method employed." type="an" maxlength="17"/>
+  <data_element id="4416" name="TestDescription" usage="" desc="Free form description of the test method and procedure." type="an" maxlength="70"/>
+  <data_element id="4419" name="TestRouteOfAdministeringCoded" usage="" desc="Code specifying the method of administering the test, e.g. oral, inhalation." type="an" maxlength="3"/>
+  <data_element id="4424" name="TestReason" usage="" desc="Reason for performing a test by name." type="an" maxlength="35"/>
+  <data_element id="4425" name="TestReasonIdentification" usage="" desc="Reason for performing a test by code." type="an" maxlength="17"/>
+  <data_element id="4431" name="PaymentGuaranteeCoded" usage="" desc="Identification of the means of guarantee." type="an" maxlength="3"/>
+  <data_element id="4435" name="PaymentChannelCoded" usage="" desc="Identification of the channel of payment." type="an" maxlength="3"/>
+  <data_element id="4439" name="PaymentConditionsCoded" usage="" desc="Identification of the method employed or to be employed in order that a payment may be made or regarded as made. The method may or may not be tied to a guarantee." type="an" maxlength="3"/>
+  <data_element id="4440" name="FreeText" usage="" desc="Free text field available to the message sender for information." type="an" maxlength="70"/>
+  <data_element id="4441" name="FreeTextCoded" usage="" desc="Free text in coded form." type="an" maxlength="3"/>
+  <data_element id="4451" name="TextSubjectQualifier" usage="" desc="Code specifying subject of a free text." type="an" maxlength="3"/>
+  <data_element id="4453" name="TextFunctionCoded" usage="" desc="Code specifying how to handle the text." type="an" maxlength="3"/>
+  <data_element id="4455" name="BackOrderCoded" usage="" desc="Code to identify the back order agreement." type="an" maxlength="3"/>
+  <data_element id="4457" name="ProductOrServiceSubstitutionCoded" usage="" desc="Code indicating product or service substitution conditions." type="an" maxlength="3"/>
+  <data_element id="4461" name="PaymentMeansCoded" usage="" desc="Indication of the instrument of payment, which may include a guarantee." type="an" maxlength="3"/>
+  <data_element id="4463" name="IntracompanyPaymentCoded" usage="" desc="Indication that the payment is within one company." type="an" maxlength="3"/>
+  <data_element id="4465" name="AdjustmentReasonCoded" usage="" desc="Indication of reason for adjustment." type="an" maxlength="3"/>
+  <data_element id="4471" name="SettlementCoded" usage="" desc="Indication of how allowances or charges are to be settled." type="an" maxlength="3"/>
+  <data_element id="4487" name="TypeOfFinancialTransactionCoded" usage="" desc="Specification of the type of a financial transaction in coded form." type="an" maxlength="3"/>
+  <data_element id="4493" name="DeliveryRequirementsCoded" usage="" desc="Indication of general instruction for delivery." type="an" maxlength="3"/>
+  <data_element id="4494" name="InsuranceCover" usage="" desc="Identification of the insurance cover." type="an" maxlength="35"/>
+  <data_element id="4495" name="InsuranceCoverIdentification" usage="" desc="Coded identification of the insurance cover." type="an" maxlength="17"/>
+  <data_element id="4497" name="InsuranceCoverTypeCoded" usage="" desc="Specification of the meaning of the insurance cover." type="an" maxlength="3"/>
+  <data_element id="4499" name="ReasonForInventoryMovementCoded" usage="" desc="To explain the reason for the inventory movement." type="an" maxlength="3"/>
+  <data_element id="4501" name="InventoryMovementDirectionCoded" usage="" desc="To specify the direction of inventory movement." type="an" maxlength="3"/>
+  <data_element id="4503" name="InventoryBalanceMethodCoded" usage="" desc="To specify the method used to establish an inventory balance." type="an" maxlength="3"/>
+  <data_element id="4505" name="CreditCoverRequestCoded" usage="" desc="Request for a credit cover." type="an" maxlength="3"/>
+  <data_element id="4507" name="CreditCoverResponseCoded" usage="" desc="Reply to a request for credit cover." type="an" maxlength="3"/>
+  <data_element id="4509" name="CreditCoverReasonCoded" usage="" desc="Reason of reply to a request for credit cover." type="an" maxlength="3"/>
+  <data_element id="4510" name="RequestedInformation" usage="" desc="To specify the information requested in a responding message in a clear text form." type="an" maxlength="35"/>
+  <data_element id="4511" name="RequestedInformationCoded" usage="" desc="To specify the information requested in a responding message in a coded form." type="an" maxlength="3"/>
+  <data_element id="4513" name="MaintenanceOperationCoded" usage="" desc="To indicate the type of data maintenance operation for an object, such as add, delete, replace." type="an" maxlength="3"/>
+  <data_element id="4517" name="SealConditionCoded" usage="" desc="To indicate the condition of a seal." type="an" maxlength="3"/>
+  <data_element id="5004" name="MonetaryAmount" usage="" desc="Number of monetary units." type="n" maxlength="18"/>
+  <data_element id="5007" name="MonetaryFunctionCoded" usage="" desc="To specify the function of a related monetary amount." type="an" maxlength="3"/>
+  <data_element id="5013" name="IndexQualifier" usage="" desc="To identify the type of index being referred to." type="an" maxlength="3"/>
+  <data_element id="5025" name="MonetaryAmountTypeQualifier" usage="" desc="Indication of type of amount." type="an" maxlength="3"/>
+  <data_element id="5027" name="IndexTypeCoded" usage="" desc="To identify the type of index." type="an" maxlength="3"/>
+  <data_element id="5030" name="IndexValue" usage="" desc="To specify the value of an index." type="n" maxlength="6"/>
+  <data_element id="5039" name="IndexValueRepresentationCoded" usage="" desc="To identify the representation of an index value." type="an" maxlength="3"/>
+  <data_element id="5047" name="ContributionQualifier" usage="" desc="Specification of the meaning of a financial contribution to a scheme or group." type="an" maxlength="3"/>
+  <data_element id="5048" name="ContributionType" usage="" desc="Description of the type of a contribution to a scheme or group." type="an" maxlength="35"/>
+  <data_element id="5049" name="ContributionTypeCoded" usage="" desc="Identification of the type of a contribution to a scheme or group." type="an" maxlength="3"/>
+  <data_element id="5118" name="Price" usage="" desc="The monetary value associated with a purchase or sale of an article, product or service." type="n" maxlength="15"/>
+  <data_element id="5125" name="PriceQualifier" usage="" desc="Identification of a type of price." type="an" maxlength="3"/>
+  <data_element id="5152" name="DutyOrTaxOrFeeType" usage="" desc="Type of duty or tax or fee applicable to commodities or of tax applicable to services." type="an" maxlength="35"/>
+  <data_element id="5153" name="DutyOrTaxOrFeeTypeCoded" usage="" desc="Identification of the type of duty or tax or fee applicable to commodities or of tax applicable to services." type="an" maxlength="3"/>
+  <data_element id="5189" name="ChargeOrAllowanceDescriptionCoded" usage="" desc="Identification of a charge or allowance." type="an" maxlength="3"/>
+  <data_element id="5213" name="SublinePriceChangeCoded" usage="" desc="Code indicating disposition of the price change of a sub-line item." type="an" maxlength="3"/>
+  <data_element id="5237" name="ChargeCategoryCoded" usage="" desc="To indicate the category or zone of charges." type="an" maxlength="3"/>
+  <data_element id="5242" name="RateOrTariffClass" usage="" desc="Description of applicable rate/tariff class." type="an" maxlength="35"/>
+  <data_element id="5243" name="RateOrTariffClassIdentification" usage="" desc="Identification of the rate/tariff class." type="an" maxlength="9"/>
+  <data_element id="5245" name="PercentageQualifier" usage="" desc="Identification of the usage of a percentage." type="an" maxlength="3"/>
+  <data_element id="5249" name="PercentageBasisCoded" usage="" desc="Indication of the application of a percentage." type="an" maxlength="3"/>
+  <data_element id="5273" name="DutyOrTaxOrFeeRateBasisIdentification" usage="" desc="Identification of the various elements of tax combination to be attributed to a commodity." type="an" maxlength="12"/>
+  <data_element id="5275" name="SupplementaryRateOrTariffBasisIdentification" usage="" desc="Code identifying supplementary rate/tariff." type="an" maxlength="6"/>
+  <data_element id="5278" name="DutyOrTaxOrFeeRate" usage="" desc="Rate of duty or tax or fee applicable to commodities or of tax applicable to services." type="an" maxlength="17"/>
+  <data_element id="5279" name="DutyOrTaxOrFeeRateIdentification" usage="" desc="Identification of the rate of duty or tax or fee applicable to commodities or of tax applicable to services." type="an" maxlength="7"/>
+  <data_element id="5283" name="DutyOrTaxOrFeeFunctionQualifier" usage="" desc="Code identifying the function of an duty, tax or fee information." type="an" maxlength="3"/>
+  <data_element id="5284" name="UnitPriceBasis" usage="" desc="Basis on which the unit price/rate applies." type="n" maxlength="9"/>
+  <data_element id="5286" name="DutyOrTaxOrFeeAssessmentBasis" usage="" desc="Value or quantity on which a duty or tax will be assessed." type="an" maxlength="15"/>
+  <data_element id="5289" name="DutyOrTaxOrFeeAccountIdentification" usage="" desc="Identification of a particular duty, tax or fee." type="an" maxlength="6"/>
+  <data_element id="5305" name="DutyOrTaxOrFeeCategoryCoded" usage="" desc="Code identifying a tax/duty/fee category within a tax/duty/fee type system." type="an" maxlength="3"/>
+  <data_element id="5314" name="RemunerationType" usage="" desc="Name of remuneration type as free text." type="an" maxlength="35"/>
+  <data_element id="5315" name="RemunerationTypeCoded" usage="" desc="Remuneration type in coded form." type="an" maxlength="3"/>
+  <data_element id="5375" name="PriceTypeCoded" usage="" desc="Code identifying the type of price of an item." type="an" maxlength="3"/>
+  <data_element id="5377" name="PriceChangeIndicatorCoded" usage="" desc="Indication of the type of price change for a line item (eg increased)." type="an" maxlength="3"/>
+  <data_element id="5379" name="ProductGroupTypeCoded" usage="" desc="Specification of the type of product group used for products." type="an" maxlength="3"/>
+  <data_element id="5387" name="PriceTypeQualifier" usage="" desc="Code identifying pricing specification." type="an" maxlength="3"/>
+  <data_element id="5388" name="ProductGroup" usage="" desc="Free form description allocated by the seller to identify uniquely his product group for a product or a series of products." type="an" maxlength="35"/>
+  <data_element id="5389" name="ProductGroupCoded" usage="" desc="Code allocated by the seller to identify uniquely his product group for a product or series of products." type="an" maxlength="3"/>
+  <data_element id="5393" name="PriceMultiplierQualifier" usage="" desc="Type of price multiplier." type="an" maxlength="3"/>
+  <data_element id="5394" name="PriceMultiplier" usage="" desc="Rate to be used to multiply a price." type="n" maxlength="12"/>
+  <data_element id="5402" name="RateOfExchange" usage="" desc="The rate at which one specified currency is expressed in another specified currency." type="n" maxlength="12"/>
+  <data_element id="5419" name="RateTypeQualifier" usage="" desc="Identification of the type of rate." type="an" maxlength="3"/>
+  <data_element id="5420" name="RatePerUnit" usage="" desc="Rate per unit specified in the unit price basis." type="n" maxlength="15"/>
+  <data_element id="5463" name="AllowanceOrChargeQualifier" usage="" desc="Specification of an allowance or charge for the service specified." type="an" maxlength="3"/>
+  <data_element id="5479" name="RelationCoded" usage="" desc="To specify the relationship between two or more items." type="an" maxlength="3"/>
+  <data_element id="5482" name="Percentage" usage="" desc="Value expressed as a percentage of a specified amount." type="n" maxlength="10"/>
+  <data_element id="5495" name="SublineIndicatorCoded" usage="" desc="Indication that the segment and/or segment group is used for sub-line item information." type="an" maxlength="3"/>
+  <data_element id="6008" name="HeightDimension" usage="" desc="Height of pieces or packages stated for transport purposes." type="n" maxlength="15"/>
+  <data_element id="6060" name="Quantity" usage="" desc="Numeric value of a quantity." type="n" maxlength="15"/>
+  <data_element id="6063" name="QuantityQualifier" usage="" desc="Code giving specific meaning to a quantity." type="an" maxlength="3"/>
+  <data_element id="6064" name="QuantityDifference" usage="" desc="Numeric value of variance between ordered/shipped/invoiced quantities." type="n" maxlength="15"/>
+  <data_element id="6066" name="ControlValue" usage="" desc="Value obtained from summing the values specified by the Control Qualifier throughout the message (Hash total)." type="n" maxlength="18"/>
+  <data_element id="6069" name="ControlQualifier" usage="" desc="Determines the source data elements in the message which forms the basis for 6066 Control value." type="an" maxlength="3"/>
+  <data_element id="6071" name="FrequencyQualifier" usage="" desc="Indication of the application of a frequency." type="an" maxlength="3"/>
+  <data_element id="6072" name="FrequencyValue" usage="" desc="A value indicating a repetitive occurrence." type="n" maxlength="9"/>
+  <data_element id="6074" name="ConfidenceLimit" usage="" desc="A percent value expressing the confidence that a true value falls within a certain confidence interval." type="n" maxlength="6"/>
+  <data_element id="6140" name="WidthDimension" usage="" desc="Width of pieces or packages stated for transport purposes." type="n" maxlength="15"/>
+  <data_element id="6145" name="DimensionQualifier" usage="" desc="To specify the dimensions applicable to each of the transportable units." type="an" maxlength="3"/>
+  <data_element id="6152" name="RangeMaximum" usage="" desc="Maximum of a range." type="n" maxlength="18"/>
+  <data_element id="6154" name="MeasurementAttribute" usage="" desc="To specify non-discrete measurement values." type="an" maxlength="70"/>
+  <data_element id="6155" name="MeasurementAttributeCoded" usage="" desc="Code used to specify non-discrete measurement values." type="an" maxlength="3"/>
+  <data_element id="6162" name="RangeMinimum" usage="" desc="Minimum of a range." type="n" maxlength="18"/>
+  <data_element id="6167" name="RangeTypeQualifier" usage="" desc="Identification of the type of range." type="an" maxlength="3"/>
+  <data_element id="6168" name="LengthDimension" usage="" desc="Length of pieces or packages stated for transport purposes." type="n" maxlength="15"/>
+  <data_element id="6173" name="SizeQualifier" usage="" desc="Indication of the type or application of a size." type="an" maxlength="3"/>
+  <data_element id="6174" name="Size" usage="" desc="A specified magnitude." type="n" maxlength="15"/>
+  <data_element id="6176" name="MaximumNumberOfOccurrences" usage="" desc="To specify the maximum number of occurrences." type="n" maxlength="7"/>
+  <data_element id="6245" name="TemperatureQualifier" usage="" desc="A code giving specific meaning to the temperature." type="an" maxlength="3"/>
+  <data_element id="6246" name="TemperatureSetting" usage="" desc="The actual temperature value in degrees Celsius (e.g. 008, 020)." type="n" maxlength="3"/>
+  <data_element id="6311" name="MeasurementApplicationQualifier" usage="" desc="Specification of the application of the physical measurement used." type="an" maxlength="3"/>
+  <data_element id="6313" name="MeasurementDimensionCoded" usage="" desc="Specification of the type of dimension to be measured." type="an" maxlength="3"/>
+  <data_element id="6314" name="MeasurementValue" usage="" desc="Value of the measured unit." type="n" maxlength="18"/>
+  <data_element id="6321" name="MeasurementSignificanceCoded" usage="" desc="Code specifying the significance of a measurement value." type="an" maxlength="3"/>
+  <data_element id="6331" name="StatisticTypeCoded" usage="" desc="Specification of the specific statistic being reported." type="an" maxlength="3"/>
+  <data_element id="6341" name="CurrencyMarketExchangeCoded" usage="" desc="Code identifying the market upon which the currency exchange rate is based." type="an" maxlength="3"/>
+  <data_element id="6343" name="CurrencyQualifier" usage="" desc="Code giving specific meaning to data element 6345 Currency." type="an" maxlength="3"/>
+  <data_element id="6345" name="CurrencyCoded" usage="" desc="Identification of the name or symbol of the monetary unit involved in the transaction." type="an" maxlength="3"/>
+  <data_element id="6347" name="CurrencyDetailsQualifier" usage="" desc="Specification of the usage to which the currency relates." type="an" maxlength="3"/>
+  <data_element id="6348" name="CurrencyRateBase" usage="" desc="Multiplying factor used in expressing the number of currency units." type="n" maxlength="4"/>
+  <data_element id="6350" name="NumberOfUnits" usage="" desc="Number of units of a certain type." type="n" maxlength="15"/>
+  <data_element id="6353" name="NumberOfUnitsQualifier" usage="" desc="Indication of the objective of number of units information." type="an" maxlength="3"/>
+  <data_element id="6411" name="MeasureUnitQualifier" usage="" desc="Indication of the unit of measurement in which weight (mass), capacity, length, area, volume or other quantity is expressed." type="an" maxlength="3"/>
+  <data_element id="6426" name="NumberOfStages" usage="" desc="Count of the number of stages that will be used in the process." type="n" maxlength="2"/>
+  <data_element id="6428" name="ActualStageCount" usage="" desc="Count of the actual number of stages agreed in a process." type="n" maxlength="2"/>
+  <data_element id="6432" name="SignificantDigits" usage="" desc="To specify the number of significant digits." type="n" maxlength="2"/>
+  <data_element id="6434" name="StatisticalConceptIdentifier" usage="" desc="The identifier of a statistical concept." type="an" maxlength="35"/>
+  <data_element id="7001" name="PhysicalOrLogicalStateQualifier" usage="" desc="Code giving a specific meaning to a physical or logical state." type="an" maxlength="3"/>
+  <data_element id="7006" name="PhysicalOrLogicalState" usage="" desc="Description of the physical or logical state." type="an" maxlength="35"/>
+  <data_element id="7007" name="PhysicalOrLogicalStateCoded" usage="" desc="Code of the physical or logical state." type="an" maxlength="3"/>
+  <data_element id="7008" name="ItemDescription" usage="" desc="Plain language description of articles or products." type="an" maxlength="35"/>
+  <data_element id="7009" name="ItemDescriptionIdentification" usage="" desc="Code from an industry code list which provides specific data about a product characteristic." type="an" maxlength="17"/>
+  <data_element id="7011" name="ArticleAvailabilityCoded" usage="" desc="Code specifying the production status of an item." type="an" maxlength="3"/>
+  <data_element id="7036" name="Characteristic" usage="" desc="Free form description of the product characteristic." type="an" maxlength="35"/>
+  <data_element id="7037" name="CharacteristicIdentification" usage="" desc="A code from an industry code list which provides specific data about a product characteristic." type="an" maxlength="17"/>
+  <data_element id="7039" name="SampleSelectionMethodCoded" usage="" desc="Code denoting the method of selecting the test specimen." type="an" maxlength="3"/>
+  <data_element id="7045" name="SampleDescriptionCoded" usage="" desc="Code describing the state of the specimen." type="an" maxlength="3"/>
+  <data_element id="7047" name="SampleDirectionCoded" usage="" desc="Code specifying the direction in which the sample was taken." type="an" maxlength="3"/>
+  <data_element id="7059" name="PropertyClassCoded" usage="" desc="Specification of the type of class." type="an" maxlength="3"/>
+  <data_element id="7064" name="TypeOfPackages" usage="" desc="Description of the form in which goods are presented." type="an" maxlength="35"/>
+  <data_element id="7065" name="TypeOfPackagesIdentification" usage="" desc="Coded description of the form in which goods are presented." type="an" maxlength="17"/>
+  <data_element id="7073" name="PackagingTermsAndConditionsCoded" usage="" desc="Code identifying packaging terms and conditions." type="an" maxlength="3"/>
+  <data_element id="7075" name="PackagingLevelCoded" usage="" desc="Indication of level of packaging specified." type="an" maxlength="3"/>
+  <data_element id="7077" name="ItemDescriptionTypeCoded" usage="" desc="Code indicating the format of a description." type="an" maxlength="3"/>
+  <data_element id="7081" name="ItemCharacteristicCoded" usage="" desc="Code specifying the item characteristic being described." type="an" maxlength="3"/>
+  <data_element id="7083" name="ConfigurationCoded" usage="" desc="Code indicating the status of the sub-line item in the configuration." type="an" maxlength="3"/>
+  <data_element id="7085" name="NatureOfCargoCoded" usage="" desc="Code indicating the type of cargo as a rough classification." type="an" maxlength="3"/>
+  <data_element id="7088" name="DangerousGoodsFlashpoint" usage="" desc="Lowest temperature, in the case of dangerous goods, at which vapour from an inflammable liquid forms an ignitable mixture with air." type="an" maxlength="8"/>
+  <data_element id="7102" name="ShippingMarks" usage="" desc="Marks and numbers identifying individual packages." type="an" maxlength="35"/>
+  <data_element id="7106" name="ShipmentFlashpoint" usage="" desc="Temperature in centigrade determined by the closed cup test as per ISO 1523/73 where a vapour is given off that can be ignited." type="n" maxlength="3"/>
+  <data_element id="7110" name="CharacteristicValue" usage="" desc="To identify the value of a characteristic." type="an" maxlength="35"/>
+  <data_element id="7111" name="CharacteristicValueCoded" usage="" desc="To identify the value of a particular characteristic in coded form." type="an" maxlength="3"/>
+  <data_element id="7124" name="UndgNumber" usage="" desc="Unique serial number assigned within the United Nations to substances and articles contained in a list of the dangerous goods most commonly carried." type="n" maxlength="4"/>
+  <data_element id="7130" name="CustomerAuthorizationNumber" usage="" desc="Customer provided authorization number to allow supplier to ship goods under specific freight conditions.  This number will be transmitted back to customer in the dispatch advice message." type="an" maxlength="17"/>
+  <data_element id="7140" name="ItemNumber" usage="" desc="A number allocated to a group or item." type="an" maxlength="35"/>
+  <data_element id="7143" name="ItemNumberTypeCoded" usage="" desc="Identification of the type of item number." type="an" maxlength="3"/>
+  <data_element id="7160" name="SpecialService" usage="" desc="Description of a special service." type="an" maxlength="35"/>
+  <data_element id="7161" name="SpecialServicesCoded" usage="" desc="Code identifying a special service." type="an" maxlength="3"/>
+  <data_element id="7164" name="HierarchicalId.Number" usage="" desc="A unique number assigned by the sender to identify a level within a hierarchical structure." type="an" maxlength="12"/>
+  <data_element id="7166" name="HierarchicalParentId." usage="" desc="Identification number of the next higher hierarchical data segment in a hierarchical structure." type="an" maxlength="12"/>
+  <data_element id="7168" name="LevelNumber" usage="" desc="Relative hierarchical position of a data segment within a message as expressed in a branching diagram." type="n" maxlength="1"/>
+  <data_element id="7186" name="ProcessType" usage="" desc="Free form description of a process." type="an" maxlength="35"/>
+  <data_element id="7187" name="ProcessTypeIdentification" usage="" desc="Specification of a process or subprocess." type="an" maxlength="17"/>
+  <data_element id="7188" name="TestRevisionNumber" usage="" desc="Definition of the revision or of the change level of the specified test method employed." type="an" maxlength="30"/>
+  <data_element id="7224" name="NumberOfPackages" usage="" desc="Number of individual parts of a shipment either unpacked, or packed in such a way that they cannot be divided without first undoing the packing." type="n" maxlength="8"/>
+  <data_element id="7233" name="PackagingRelatedInformationCoded" usage="" desc="Code giving packaging, handling and marking related information." type="an" maxlength="3"/>
+  <data_element id="7240" name="TotalNumberOfItems" usage="" desc="Total number of items, having separate goods descriptions." type="n" maxlength="15"/>
+  <data_element id="7273" name="ServiceRequirementCoded" usage="" desc="Identification of a service requirement (which may constitute an additional component to a basic contract)." type="an" maxlength="3"/>
+  <data_element id="7293" name="SectorOrSubjectIdentificationQualifier" usage="" desc="Identification of the subject areas to which the specified conditions apply." type="an" maxlength="3"/>
+  <data_element id="7294" name="RequirementOrCondition" usage="" desc="Plain text identifying a specific requirement or condition." type="an" maxlength="35"/>
+  <data_element id="7295" name="RequirementOrConditionIdentification" usage="" desc="Code identifying a specific rule, regulation or condition." type="an" maxlength="17"/>
+  <data_element id="7297" name="SetIdentificationQualifier" usage="" desc="Identification of the type of set." type="an" maxlength="3"/>
+  <data_element id="7299" name="RequirementDesignatorCoded" usage="" desc="To specify the designated requirement." type="an" maxlength="3"/>
+  <data_element id="7357" name="CommodityOrRateIdentification" usage="" desc="Code identifying goods for Customs, transport or statistical purposes (generic term)." type="an" maxlength="18"/>
+  <data_element id="7361" name="CustomsCodeIdentification" usage="" desc="To specify goods in terms of customs identity." type="an" maxlength="18"/>
+  <data_element id="7365" name="ProcessingIndicatorCoded" usage="" desc="Identifies the value to be attributed to indicators required by the processing system." type="an" maxlength="3"/>
+  <data_element id="7383" name="SurfaceOrLayerIndicatorCoded" usage="" desc="Code indicating the surface or layer of a product that is being described." type="an" maxlength="3"/>
+  <data_element id="7402" name="IdentityNumber" usage="" desc="A value given to an object for identification purposes." type="an" maxlength="35"/>
+  <data_element id="7405" name="IdentityNumberQualifier" usage="" desc="Code specifying the type/source of identity number." type="an" maxlength="3"/>
+  <data_element id="7419" name="HazardousMaterialClassCodeIdentification" usage="" desc="Code specifying the kind of hazard for a material." type="an" maxlength="4"/>
+  <data_element id="7429" name="IndexingStructureQualifier" usage="" desc="To qualify the indexing structure established for a project." type="an" maxlength="3"/>
+  <data_element id="7431" name="AgreementTypeQualifier" usage="" desc="Indication of the type of agreement." type="an" maxlength="3"/>
+  <data_element id="7433" name="AgreementTypeCoded" usage="" desc="Specification of the type of agreement." type="an" maxlength="3"/>
+  <data_element id="7434" name="AgreementTypeDescription" usage="" desc="Description of the type of agreement." type="an" maxlength="70"/>
+  <data_element id="7436" name="LevelOneId." usage="" desc="The first facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7438" name="LevelTwoId." usage="" desc="The second facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7440" name="LevelThreeId." usage="" desc="The third facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7442" name="LevelFourId." usage="" desc="The fourth facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7444" name="LevelFiveId." usage="" desc="The fifth facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7446" name="LevelSixId." usage="" desc="The sixth facet of a sequencing mechanism used to position an item within an indexing structure." type="an" maxlength="17"/>
+  <data_element id="7449" name="MembershipQualifier" usage="" desc="Specification of the meaning of a code to qualify membership data." type="an" maxlength="3"/>
+  <data_element id="7450" name="MembershipCategory" usage="" desc="Description of a membership category." type="an" maxlength="35"/>
+  <data_element id="7451" name="MembershipCategoryIdentification" usage="" desc="Identification of a membership category." type="an" maxlength="4"/>
+  <data_element id="7452" name="MembershipStatus" usage="" desc="Description of membership status." type="an" maxlength="35"/>
+  <data_element id="7453" name="MembershipStatusCoded" usage="" desc="Identification of the membership status." type="an" maxlength="3"/>
+  <data_element id="7455" name="MembershipLevelQualifier" usage="" desc="Specification of the meaning of a membership level." type="an" maxlength="3"/>
+  <data_element id="7456" name="MembershipLevel" usage="" desc="Description of a membership level." type="an" maxlength="35"/>
+  <data_element id="7457" name="MembershipLevelIdentification" usage="" desc="Identification of a membership level." type="an" maxlength="9"/>
+  <data_element id="7491" name="TypeOfInventoryAffectedCoded" usage="" desc="To specify the type of inventory which is affected by an inventory movement or expressed in an inventory balance." type="an" maxlength="3"/>
+  <data_element id="7493" name="DamageDetailsQualifier" usage="" desc="Code giving specific meaning to the damage details." type="an" maxlength="3"/>
+  <data_element id="7495" name="IdentificationQualifier" usage="" desc="To identify a type of object." type="an" maxlength="3"/>
+  <data_element id="7497" name="ComponentFunctionQualifier" usage="" desc="To identify the function of a structure component." type="an" maxlength="3"/>
+  <data_element id="7500" name="TypeOfDamage" usage="" desc="Description specifying the type of damage to an object." type="an" maxlength="35"/>
+  <data_element id="7501" name="TypeOfDamageCoded" usage="" desc="Code specifying the type of damage to an object." type="an" maxlength="3"/>
+  <data_element id="7502" name="DamageArea" usage="" desc="Description specifying where the damage is on an object." type="an" maxlength="35"/>
+  <data_element id="7503" name="DamageAreaIdentification" usage="" desc="Code specifying where the damage is on an object." type="an" maxlength="4"/>
+  <data_element id="7504" name="TypeOfUnitOrComponent" usage="" desc="Description identifying the type of unit/component of an object (e.g. lock, door, tyre)." type="an" maxlength="35"/>
+  <data_element id="7505" name="TypeOfUnitOrComponentCoded" usage="" desc="Code identifying the type of unit/component of an object (e.g. lock, door, tyre)." type="an" maxlength="3"/>
+  <data_element id="7506" name="ComponentMaterial" usage="" desc="Description identifying the material of which a component is composed (e.g. steel, plastics)." type="an" maxlength="35"/>
+  <data_element id="7507" name="ComponentMaterialCoded" usage="" desc="Code identifying the material of which a component is composed (e.g. steel, plastics)." type="an" maxlength="3"/>
+  <data_element id="7508" name="DamageSeverity" usage="" desc="Description specifying the severity of damage to an object." type="an" maxlength="35"/>
+  <data_element id="7509" name="DamageSeverityCoded" usage="" desc="Code specifying the severity of damage to an object." type="an" maxlength="3"/>
+  <data_element id="7511" name="TypeOfMarkingCoded" usage="" desc="To specify the type of marking that reflects the method and the conventions adhered to for marking." type="an" maxlength="3"/>
+  <data_element id="7512" name="StructureComponentIdentifier" usage="" desc="The identifier of a structure component." type="an" maxlength="35"/>
+  <data_element id="8022" name="FreightAndCharges" usage="" desc="Plain language statement describing freight and other charges." type="an" maxlength="26"/>
+  <data_element id="8023" name="FreightAndChargesIdentification" usage="" desc="Coded description of freight charges and other charges (used in combination with 1131/3055)." type="an" maxlength="17"/>
+  <data_element id="8028" name="ConveyanceReferenceNumber" usage="" desc="Unique reference given by the carrier to a certain journey or departure of a means of transport (generic term)." type="an" maxlength="17"/>
+  <data_element id="8051" name="TransportStageQualifier" usage="" desc="Qualifier giving a specific meaning to the transport details." type="an" maxlength="3"/>
+  <data_element id="8053" name="EquipmentQualifier" usage="" desc="Code identifying type of equipment." type="an" maxlength="3"/>
+  <data_element id="8066" name="ModeOfTransport" usage="" desc="Method of transport used for the carriage of the goods." type="an" maxlength="17"/>
+  <data_element id="8067" name="ModeOfTransportCoded" usage="" desc="Coded method of transport used for the carriage of the goods." type="an" maxlength="3"/>
+  <data_element id="8077" name="EquipmentSupplierCoded" usage="" desc="To indicate the party that is the supplier of the equipment." type="an" maxlength="3"/>
+  <data_element id="8078" name="HazardSubstanceOrItemOrPageNumber" usage="" desc="Number giving additional hazard code classification of a goods item within the applicable dangerous goods regulation." type="an" maxlength="7"/>
+  <data_element id="8092" name="HazardCodeVersionNumber" usage="" desc="The version/revision number of date of issuance of the code used." type="an" maxlength="10"/>
+  <data_element id="8101" name="TransitDirectionCoded" usage="" desc="Identification of the point of origin and point of direction." type="an" maxlength="3"/>
+  <data_element id="8126" name="TremCardNumber" usage="" desc="The identification of a transport emergency card giving advice for emergency actions." type="an" maxlength="10"/>
+  <data_element id="8154" name="EquipmentSizeAndType" usage="" desc="Plain language description of the size and type of equipment e.g. unit load device." type="an" maxlength="35"/>
+  <data_element id="8155" name="EquipmentSizeAndTypeIdentification" usage="" desc="Coded description of the size and type of equipment e.g. unit load device." type="an" maxlength="10"/>
+  <data_element id="8158" name="HazardIdentificationNumberUpperPart" usage="" desc="The id. number for the Orange Placard (upper part) required on the means of transport." type="an" maxlength="4"/>
+  <data_element id="8169" name="FullOrEmptyIndicatorCoded" usage="" desc="To indicate the extent to which the equipment is full or empty." type="an" maxlength="3"/>
+  <data_element id="8178" name="TypeOfMeansOfTransport" usage="" desc="Description of the type of the means of transport being utilized." type="an" maxlength="17"/>
+  <data_element id="8179" name="TypeOfMeansOfTransportIdentification" usage="" desc="Code defining the type of the means of transport being utilized." type="an" maxlength="8"/>
+  <data_element id="8186" name="SubstanceIdentificationNumberLowerPart" usage="" desc="The number for the Orange Placard (lower part) required on the means of transport." type="an" maxlength="4"/>
+  <data_element id="8211" name="PermissionForTransportCoded" usage="" desc="Code giving evidence that transportation of particular hazardous cargo is permitted and identifies the restrictions being put upon a particular transport." type="an" maxlength="3"/>
+  <data_element id="8212" name="Id.OfTheMeansOfTransport" usage="" desc="Identification of the means of transport by name or number." type="an" maxlength="35"/>
+  <data_element id="8213" name="Id.OfMeansOfTransportIdentification" usage="" desc="Identification of the means of transport by name or number." type="an" maxlength="9"/>
+  <data_element id="8246" name="DangerousGoodsLabelMarking" usage="" desc="Marking identifying the type of hazardous goods (substance), Loading/Unloading instructions and advising actions in case of emergency." type="an" maxlength="4"/>
+  <data_element id="8249" name="EquipmentStatusCoded" usage="" desc="Indication of the action related to the equipment." type="an" maxlength="3"/>
+  <data_element id="8255" name="PackingInstructionCoded" usage="" desc="Code defining the quantity and the type of package in which a product is allowed to be shipped in a passenger or freight aircraft." type="an" maxlength="3"/>
+  <data_element id="8260" name="EquipmentIdentificationNumber" usage="" desc="Marks (letters and/or numbers) which identify equipment e.g. unit load device." type="an" maxlength="17"/>
+  <data_element id="8273" name="DangerousGoodsRegulationsCoded" usage="" desc="Code indicating the regulation, international or national, applicable for a means of transport." type="an" maxlength="3"/>
+  <data_element id="8275" name="ContainerOrPackageStatusCoded" usage="" desc="Code to identify whether goods of separate description or comprising separate consignments are contained in the same external packaging or to indicate that a container or similar unit load device is empty." type="an" maxlength="3"/>
+  <data_element id="8281" name="TransportOwnershipCoded" usage="" desc="Code indicating the ownership of the means of transport." type="an" maxlength="3"/>
+  <data_element id="8323" name="TransportMovementCoded" usage="" desc="Code indicating the movement of goods (e.g. import, export, transit)." type="an" maxlength="3"/>
+  <data_element id="8325" name="CategoryOfMeansOfTransportCoded" usage="" desc="Identification of the type of means of transport determined to carry particular goods, not necessarily being hazardous." type="an" maxlength="3"/>
+  <data_element id="8332" name="EquipmentPlan" usage="" desc="Description indicating equipment plan, e.g. FCL or LCL." type="an" maxlength="26"/>
+  <data_element id="8334" name="MovementType" usage="" desc="Description of the type of movement." type="an" maxlength="35"/>
+  <data_element id="8335" name="MovementTypeCoded" usage="" desc="Code indicating the type of movement." type="an" maxlength="3"/>
+  <data_element id="8339" name="PackingGroupCoded" usage="" desc="Identification of a packing group by code." type="an" maxlength="3"/>
+  <data_element id="8341" name="HaulageArrangementsCoded" usage="" desc="Specification of the type of equipment haulage arrangements." type="an" maxlength="3"/>
+  <data_element id="8351" name="HazardCodeIdentification" usage="" desc="Dangerous goods code." type="an" maxlength="7"/>
+  <data_element id="8364" name="EmsNumber" usage="" desc="Emergency procedures for ships carrying dangerous goods." type="an" maxlength="6"/>
+  <data_element id="8393" name="ReturnablePackageLoadContentsCoded" usage="" desc="To indicate the composition of goods loaded into a returnable package." type="an" maxlength="3"/>
+  <data_element id="8395" name="ReturnablePackageFreightPaymentResponsibilityCoded" usage="" desc="To indicate responsibility for payment of return freight charges for packaging that is returnable." type="an" maxlength="3"/>
+  <data_element id="8410" name="Mfag" usage="" desc="Medical first aid guide." type="an" maxlength="4"/>
+  <data_element id="8453" name="NationalityOfMeansOfTransportCoded" usage="" desc="Coded name of the country in which a means of transport is registered." type="an" maxlength="3"/>
+  <data_element id="8457" name="ExcessTransportationReasonCoded" usage="" desc="Indication of reason for excess transportation." type="an" maxlength="3"/>
+  <data_element id="8459" name="ExcessTransportationResponsibilityCoded" usage="" desc="Indication of responsibility for excess transportation." type="an" maxlength="3"/>
+  <data_element id="9003" name="EmploymentQualifier" usage="" desc="Specification of the meaning of employment details." type="an" maxlength="3"/>
+  <data_element id="9004" name="EmploymentCategory" usage="" desc="Description of employment category." type="an" maxlength="35"/>
+  <data_element id="9005" name="EmploymentCategoryCoded" usage="" desc="Identification of the employment category." type="an" maxlength="3"/>
+  <data_element id="9006" name="QualificationClassification" usage="" desc="Description of a qualification classification." type="an" maxlength="35"/>
+  <data_element id="9007" name="QualificationClassificationCoded" usage="" desc="Identification of a qualification classification." type="an" maxlength="3"/>
+  <data_element id="9008" name="Occupation" usage="" desc="Description of an occupation." type="an" maxlength="35"/>
+  <data_element id="9009" name="OccupationCoded" usage="" desc="Code identifying an occupation." type="an" maxlength="3"/>
+  <data_element id="9010" name="StatusEvent" usage="" desc="Description of a status event." type="an" maxlength="35"/>
+  <data_element id="9011" name="StatusEventCoded" usage="" desc="Code identifying a status event." type="an" maxlength="3"/>
+  <data_element id="9012" name="StatusReason" usage="" desc="Provides the reason behind a status event." type="an" maxlength="35"/>
+  <data_element id="9013" name="StatusReasonCoded" usage="" desc="Code identifying the reason behind a status event." type="an" maxlength="3"/>
+  <data_element id="9015" name="StatusTypeCoded" usage="" desc="Code identifying the type of status event." type="an" maxlength="3"/>
+  <data_element id="9017" name="AttributeFunctionQualifier" usage="" desc="Specification of the meaning of an attribute function." type="an" maxlength="3"/>
+  <data_element id="9018" name="Attribute" usage="" desc="Description of an attribute of an entity." type="an" maxlength="35"/>
+  <data_element id="9019" name="AttributeCoded" usage="" desc="Identification of an attribute." type="an" maxlength="3"/>
+  <data_element id="9021" name="AttributeTypeCoded" usage="" desc="Coded specification of the type attribute." type="an" maxlength="3"/>
+  <data_element id="9035" name="QualificationAreaCoded" usage="" desc="Code identifying the application area of a qualification." type="an" maxlength="3"/>
+  <data_element id="9141" name="RelationshipQualifier" usage="" desc="Specification of the meaning of a relationship." type="an" maxlength="3"/>
+  <data_element id="9142" name="Relationship" usage="" desc="Description of a relationship." type="an" maxlength="35"/>
+  <data_element id="9143" name="RelationshipCoded" usage="" desc="Identification of a relationship." type="an" maxlength="3"/>
+  <data_element id="9146" name="CompositeDataElementTag" usage="" desc="Tag of a composite data element." type="an" maxlength="4"/>
+  <data_element id="9148" name="DirectoryStatus" usage="" desc="The status of a directory set." type="an" maxlength="3"/>
+  <data_element id="9150" name="SimpleDataElementTag" usage="" desc="Tag of a simple data element." type="an" maxlength="4"/>
+  <data_element id="9153" name="SimpleDataElementCharacterRepresentationCoded" usage="" desc="To specify the character representation of a simple data element." type="an" maxlength="3"/>
+  <data_element id="9155" name="SimpleDataElementLengthTypeCoded" usage="" desc="Code identifying the length type of a simple data element." type="an" maxlength="3"/>
+  <data_element id="9156" name="SimpleDataElementMaximumLength" usage="" desc="To indicate the maximum length of a simple data element." type="n" maxlength="3"/>
+  <data_element id="9158" name="SimpleDataElementMinimumLength" usage="" desc="To indicate the minimum length of a simple data element." type="n" maxlength="3"/>
+  <data_element id="9161" name="CodeSetIndicatorCoded" usage="" desc="To indicate if a data element has an associated code set." type="an" maxlength="3"/>
+  <data_element id="9162" name="DataElementTag" usage="" desc="Tag of a data element." type="an" maxlength="4"/>
+  <data_element id="9164" name="GroupIdentification" usage="" desc="To identify a group within a message type structure." type="an" maxlength="4"/>
+  <data_element id="9166" name="SegmentTag" usage="" desc="Tag of a segment." type="an" maxlength="3"/>
+  <data_element id="9213" name="TypeOfDutyRegimeCoded" usage="" desc="Identification of the statement of the full/preferential regime according to which duty is assessed." type="an" maxlength="3"/>
+  <data_element id="9280" name="ValidationResult" usage="" desc="The result of the application of an algorithm to the content of data element in a message." type="an" maxlength="35"/>
+  <data_element id="9282" name="ValidationKeyIdentification" usage="" desc="Identifies the cryptographic key used to calculate the validation result." type="an" maxlength="35"/>
+  <data_element id="9302" name="SealingParty" usage="" desc="Clear text, representing the name of the issuer of the seal number." type="an" maxlength="35"/>
+  <data_element id="9303" name="SealingPartyCoded" usage="" desc="Identification of the issuer of the seal number." type="an" maxlength="3"/>
+  <data_element id="9308" name="SealNumber" usage="" desc="The number of a custom seal or another seal affixed to the containers or other transport unit." type="an" maxlength="10"/>
+  <data_element id="9321" name="ApplicationErrorIdentification" usage="" desc="The code assigned by the receiver of a message to the identification of a data validation error condition." type="an" maxlength="8"/>
+  <data_element id="9353" name="GovernmentProcedureCoded" usage="" desc="Code identifying the treatment applied by the government to goods which are subject to a control." type="an" maxlength="3"/>
+  <data_element id="9411" name="GovernmentInvolvementCoded" usage="" desc="Indication of requirement and status of government involvement." type="an" maxlength="3"/>
+  <data_element id="9415" name="GovernmentAgencyCoded" usage="" desc="To indicate government agencies that are involved." type="an" maxlength="3"/>
+  <data_element id="9417" name="GovernmentActionCoded" usage="" desc="To indicate type of government action such as inspection, detention, fumigation, security." type="an" maxlength="3"/>
+  <data_element id="9419" name="ServiceLayerCoded" usage="" desc="Subdivision of a service by code." type="an" maxlength="3"/>
+  <data_element id="9421" name="StagesQualifier" usage="" desc="Code identifying the kind of stage in a process." type="an" maxlength="3"/>
+  <data_element id="9424" name="ArrayCellInformation" usage="" desc="Contains the data for a cell in an array." type="an" maxlength="35"/>
+  <data_element id="9426" name="CodeValue" usage="" desc="Value of the code." type="an" maxlength="35"/>
+  <data_element id="9428" name="ArrayStructureIdentifier" usage="" desc="The identifier of an array structure." type="an" maxlength="35"/>
+  <data_element id="9430" name="FootnoteSetIdentifier" usage="" desc="The identifier of a set of footnotes." type="an" maxlength="35"/>
+  <data_element id="9432" name="FootnoteIdentifier" usage="" desc="The identifier of a footnote." type="an" maxlength="35"/>
+  <data_element id="9434" name="CodeName" usage="" desc="Name of a code." type="an" maxlength="70"/>
+</data_elements>

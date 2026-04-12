@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<composite_data_elements>
+  <composite_data_element id="C002" name="DocumentOrMessageName" desc="Identification of a type of document/message by code or name. Code preferred."/>
+  <composite_data_element id="C040" name="Carrier" desc="Identification of a carrier by code and/or by name. Code preferred."/>
+  <composite_data_element id="C042" name="NationalityDetails" desc="To specify a nationality."/>
+  <composite_data_element id="C045" name="BillLevelIdentification" desc="A sequenced collection of facetted codes used for multiple indexing purposes."/>
+  <composite_data_element id="C049" name="RemunerationTypeIdentification" desc="Identification of the type of a remuneration."/>
+  <composite_data_element id="C056" name="DepartmentOrEmployeeDetails" desc="Code and/or name of a department or employee. Code preferred."/>
+  <composite_data_element id="C058" name="NameAndAddress" desc="Unstructured name and address: one to five lines."/>
+  <composite_data_element id="C059" name="Street" desc="Street address and/or PO Box number in a structured address: one to three lines."/>
+  <composite_data_element id="C076" name="CommunicationContact" desc="Communication number of a department or employee in a specified channel."/>
+  <composite_data_element id="C077" name="FileIdentification" desc="To identify a file."/>
+  <composite_data_element id="C078" name="AccountIdentification" desc="Identification of an account holder by account number and/or account holder name in one or two lines. Number preferred."/>
+  <composite_data_element id="C079" name="ComputerEnvironmentIdentification" desc="To identify parts of a computer environment."/>
+  <composite_data_element id="C080" name="PartyName" desc="Identification of a transaction party by name, one to five lines. Party name may be formatted."/>
+  <composite_data_element id="C082" name="PartyIdentificationDetails" desc="Identification of a transaction party by code."/>
+  <composite_data_element id="C085" name="MaritalStatusDetails" desc="To specify the marital status of a person."/>
+  <composite_data_element id="C088" name="InstitutionIdentification" desc="Identification of a financial institution by code branch number, or name and name of place. Code or branch number preferred."/>
+  <composite_data_element id="C090" name="AddressDetails" desc="To specify the details of an address."/>
+  <composite_data_element id="C099" name="FileDetails" desc="To define details relevant to a file."/>
+  <composite_data_element id="C100" name="TermsOfDeliveryOrTransport" desc="Terms of delivery or transport code from a specified source."/>
+  <composite_data_element id="C101" name="ReligionDetails" desc="To specify the religion of a person."/>
+  <composite_data_element id="C107" name="TextReference" desc="Coded reference to a standard text and its source."/>
+  <composite_data_element id="C108" name="TextLiteral" desc="Free text; one to five lines."/>
+  <composite_data_element id="C110" name="PaymentTerms" desc="Terms of payment code from a specified source."/>
+  <composite_data_element id="C112" name="TermsOrTimeInformation" desc="Time details in payment terms."/>
+  <composite_data_element id="C128" name="RateDetails" desc="Rate per unit and rate basis."/>
+  <composite_data_element id="C138" name="PriceMultiplierInformation" desc="Price multiplier and its identification."/>
+  <composite_data_element id="C174" name="ValueOrRange" desc="Measurement value and relevant minimum and maximum tolerances in that order."/>
+  <composite_data_element id="C186" name="QuantityDetails" desc="Quantity information in a transaction, qualified when relevant."/>
+  <composite_data_element id="C200" name="Charge" desc="Identification of a charge by code and/or by name."/>
+  <composite_data_element id="C202" name="PackageType" desc="Type of package by name or by code from a specified source."/>
+  <composite_data_element id="C203" name="RateOrTariffClass" desc="Identification of the applicable rate/tariff class."/>
+  <composite_data_element id="C205" name="HazardCode" desc="The identification of the dangerous goods in code."/>
+  <composite_data_element id="C206" name="IdentificationNumber" desc="The identification of an object."/>
+  <composite_data_element id="C208" name="IdentityNumberRange" desc="Goods item identification numbers, start and end of consecutively numbered range."/>
+  <composite_data_element id="C210" name="Marks" desc=""/>
+  <composite_data_element id="C211" name="Dimensions" desc="Specification of the dimensions of a transportable unit."/>
+  <composite_data_element id="C212" name="ItemNumberIdentification" desc="Goods identification for a specified source."/>
+  <composite_data_element id="C213" name="NumberAndTypeOfPackages" desc="Number and type of individual parts of a shipment."/>
+  <composite_data_element id="C214" name="SpecialServicesIdentification" desc="Identification of a special service by a code from a specified source or by description."/>
+  <composite_data_element id="C215" name="SealIssuer" desc="Identification of the issuer of a seal on equipment either by code or by name."/>
+  <composite_data_element id="C218" name="HazardousMaterial" desc="Hazardous material code from a specified source."/>
+  <composite_data_element id="C219" name="MovementType" desc="Description of type of service for movement of cargo."/>
+  <composite_data_element id="C220" name="ModeOfTransport" desc="Method of transport code or name. Code preferred."/>
+  <composite_data_element id="C222" name="TransportIdentification" desc="Code and/or name identifying the means of transport."/>
+  <composite_data_element id="C223" name="DangerousGoodsShipmentFlashpoint" desc="Temperature at which a vapor according to ISO 1523/73 can be ignited."/>
+  <composite_data_element id="C224" name="EquipmentSizeAndType" desc="Code and/or name identifying size and type of equipment used in transport. Code preferred."/>
+  <composite_data_element id="C228" name="TransportMeans" desc="Code and/or name identifying the type of means of transport."/>
+  <composite_data_element id="C229" name="ChargeCategory" desc="Identification of a category or a zone of charges."/>
+  <composite_data_element id="C231" name="MethodOfPayment" desc="Code identifying the method of payment."/>
+  <composite_data_element id="C232" name="GovernmentAction" desc="Code indicating a type of government action."/>
+  <composite_data_element id="C233" name="Service" desc=""/>
+  <composite_data_element id="C234" name="UndgInformation" desc="Information on United Nations Dangerous Goods classification."/>
+  <composite_data_element id="C235" name="HazardIdentification" desc="Identification of the Orange placard required on the means of transport."/>
+  <composite_data_element id="C236" name="DangerousGoodsLabel" desc="Markings identifying the type of hazardous goods and similar information."/>
+  <composite_data_element id="C237" name="EquipmentIdentification" desc="Marks (letters and/or numbers) identifying equipment used for transport such as a container."/>
+  <composite_data_element id="C239" name="TemperatureSetting" desc="The temperature under which the goods are (to be) stored or shipped."/>
+  <composite_data_element id="C240" name="ProductCharacteristic" desc="Specific product characteristic data."/>
+  <composite_data_element id="C241" name="DutyOrTaxOrFeeType" desc="Code and/or name identifying duty, tax or fee."/>
+  <composite_data_element id="C242" name="ProcessTypeAndDescription" desc="Identification of process type and description."/>
+  <composite_data_element id="C243" name="DutyOrTaxOrFeeDetail" desc="Rate of duty/tax/fee applicable to commodities or of tax applicable to services."/>
+  <composite_data_element id="C244" name="TestMethod" desc="Specification of the test method employed."/>
+  <composite_data_element id="C246" name="CustomsIdentityCodes" desc="Specification of goods in terms of customs identity."/>
+  <composite_data_element id="C270" name="Control" desc="Control total for checking integrity of a message or part of a message."/>
+  <composite_data_element id="C273" name="ItemDescription" desc=""/>
+  <composite_data_element id="C279" name="QuantityDifferenceInformation" desc="Information on quantity difference."/>
+  <composite_data_element id="C280" name="Range" desc="Range minimum and maximum limits."/>
+  <composite_data_element id="C286" name="SequenceInformation" desc="Identification of a sequence and source for sequencing."/>
+  <composite_data_element id="C288" name="ProductGroup" desc="To give product group information."/>
+  <composite_data_element id="C292" name="PriceChangeInformation" desc="A value assigned by the seller to indicate movement of prices from a previous price catalogue."/>
+  <composite_data_element id="C329" name="PatternDescription" desc="Shipment, delivery or production interval pattern and timing."/>
+  <composite_data_element id="C330" name="InsuranceCoverType" desc="To provide the insurance cover type."/>
+  <composite_data_element id="C331" name="InsuranceCoverDetails" desc="To provide the insurance cover details."/>
+  <composite_data_element id="C332" name="SalesChannelIdentification" desc="Identification of sales channel for marketing data, sales, forecast, planning..."/>
+  <composite_data_element id="C333" name="InformationRequest" desc="To specify the information requested in a responding message."/>
+  <composite_data_element id="C401" name="ExcessTransportationInformation" desc="To provide details of reason for, and responsibility for, use of transportation other than normally utilized."/>
+  <composite_data_element id="C402" name="PackageTypeIdentification" desc="Identification of the form in which goods are described."/>
+  <composite_data_element id="C501" name="PercentageDetails" desc="Percentage relating to a specified basis."/>
+  <composite_data_element id="C502" name="MeasurementDetails" desc="Identification of measurement type."/>
+  <composite_data_element id="C503" name="DocumentOrMessageDetails" desc="Identification of document/message by number, status, source and/or language."/>
+  <composite_data_element id="C504" name="CurrencyDetails" desc="The usage to which a currency relates."/>
+  <composite_data_element id="C506" name="Reference" desc="Identification of a reference."/>
+  <composite_data_element id="C507" name="DateOrTimeOrPeriod" desc="Date and/or time, or period relevant to the specified date/time/period type."/>
+  <composite_data_element id="C508" name="LanguageDetails" desc="To identify a language."/>
+  <composite_data_element id="C509" name="PriceInformation" desc="Identification of price type, price and related details."/>
+  <composite_data_element id="C512" name="SizeDetails" desc="Information about the number of observations."/>
+  <composite_data_element id="C514" name="SampleLocationDetails" desc="Identification of location within the specimen, from which the sample was taken."/>
+  <composite_data_element id="C515" name="TestReason" desc="To identify the reason for the test as specified."/>
+  <composite_data_element id="C516" name="MonetaryAmount" desc="Amount of goods or services stated as a monetary amount in a specified currency."/>
+  <composite_data_element id="C517" name="LocationIdentification" desc="Identification of a location by code or name."/>
+  <composite_data_element id="C519" name="RelatedLocationOneIdentification" desc="Identification the first related location by code or name."/>
+  <composite_data_element id="C521" name="BusinessFunction" desc="To specify a business reason."/>
+  <composite_data_element id="C522" name="Instruction" desc="To specify an instruction."/>
+  <composite_data_element id="C523" name="NumberOfUnitDetails" desc="Identification of number of units and its purpose."/>
+  <composite_data_element id="C524" name="HandlingInstructions" desc="Instruction for the handling of goods, products or articles in shipment, storage etc."/>
+  <composite_data_element id="C526" name="FrequencyDetails" desc="Number of samples collected per specified unit of measure."/>
+  <composite_data_element id="C527" name="StatisticalDetails" desc="Specifications related to statistical measurements."/>
+  <composite_data_element id="C528" name="CommodityOrRateDetail" desc="Identification of commodity/rates."/>
+  <composite_data_element id="C529" name="ProcessingIndicator" desc="Type of process indication."/>
+  <composite_data_element id="C531" name="PackagingDetails" desc="Packaging level and details, terms and conditions."/>
+  <composite_data_element id="C532" name="ReturnablePackageDetails" desc="Indication of responsibility for payment and load contents of returnable packages."/>
+  <composite_data_element id="C533" name="DutyOrTaxOrFeeAccountDetail" desc="Indication of account reference for duties, taxes and/or fees."/>
+  <composite_data_element id="C534" name="PaymentInstructionDetails" desc="Indication of method of payment employed or to be employed."/>
+  <composite_data_element id="C536" name="ContractAndCarriageCondition" desc="To identify a contract and carriage condition."/>
+  <composite_data_element id="C537" name="TransportPriority" desc="To indicate the priority of requested transport service."/>
+  <composite_data_element id="C543" name="AgreementTypeIdentification" desc="Identification of specific agreement type by code or name."/>
+  <composite_data_element id="C545" name="IndexIdentification" desc="To identify an index."/>
+  <composite_data_element id="C546" name="IndexValue" desc="To identify the value of an index."/>
+  <composite_data_element id="C549" name="MonetaryFunction" desc="To identify the function of a related monetary amount."/>
+  <composite_data_element id="C550" name="RequirementOrConditionIdentification" desc="To identify the specific rule/condition requirement."/>
+  <composite_data_element id="C551" name="BankOperation" desc="Identification of a bank operation by code."/>
+  <composite_data_element id="C552" name="AllowanceOrChargeInformation" desc="Identification of allowance/charge information by number and/or code."/>
+  <composite_data_element id="C553" name="RelatedLocationTwoIdentification" desc="Identification of second related location by code or name."/>
+  <composite_data_element id="C554" name="RateOrTariffClassDetail" desc="Identification of the applicable rate/tariff class."/>
+  <composite_data_element id="C555" name="StatusEvent" desc="To specify a status event."/>
+  <composite_data_element id="C556" name="StatusReason" desc="To specify the reason behind a status event."/>
+  <composite_data_element id="C564" name="PhysicalOrLogicalStateInformation" desc="To give information in coded or clear text form on the physical or logical state."/>
+  <composite_data_element id="C585" name="PriorityDetails" desc="To indicate a priority."/>
+  <composite_data_element id="C601" name="StatusType" desc="To specify the type of status in relation to an industry sector or business function."/>
+  <composite_data_element id="C701" name="ErrorPointDetails" desc="Indication of the point of error in a message."/>
+  <composite_data_element id="C702" name="CodeSetIdentification" desc="To identify a code set."/>
+  <composite_data_element id="C703" name="NatureOfCargo" desc="Rough classification of a type of cargo."/>
+  <composite_data_element id="C709" name="MessageIdentifier" desc="Identification of the message."/>
+  <composite_data_element id="C770" name="ArrayCellDetails" desc="To contain the data for a contiguous set of cells in an array."/>
+  <composite_data_element id="C778" name="PositionIdentification" desc="To identify the position of an object in a structure containing the object."/>
+  <composite_data_element id="C779" name="ArrayStructureIdentification" desc="The identification of an array structure."/>
+  <composite_data_element id="C780" name="ValueListIdentification" desc="The identification of a coded or non coded value list."/>
+  <composite_data_element id="C782" name="DataSetIdentification" desc="The identification of a data set."/>
+  <composite_data_element id="C783" name="FootnoteSetIdentification" desc="The identification of a set of footnotes."/>
+  <composite_data_element id="C784" name="FootnoteIdentification" desc="The identification of a footnote."/>
+  <composite_data_element id="C785" name="StatisticalConceptIdentification" desc="The identification of a statistical concept."/>
+  <composite_data_element id="C786" name="StructureComponentIdentification" desc="The identification of a structure component."/>
+  <composite_data_element id="C814" name="SafetySection" desc="To identify the safety section to which information relates."/>
+  <composite_data_element id="C815" name="AdditionalSafetyInformation" desc="To identify additional safety information."/>
+  <composite_data_element id="C816" name="NameComponentDetails" desc="To specify a name component."/>
+  <composite_data_element id="C817" name="AddressUsage" desc="To describe the usage of an address."/>
+  <composite_data_element id="C818" name="PersonInheritedCharacteristicDetails" desc="To specify an inherited characteristic of a person."/>
+  <composite_data_element id="C819" name="CountrySub" desc="To specify a part of a country (eg county or part of a city)."/>
+  <composite_data_element id="C821" name="TypeOfDamage" desc="To specify the type of damage to an object."/>
+  <composite_data_element id="C822" name="DamageArea" desc="To specify where the damage is on an object."/>
+  <composite_data_element id="C823" name="TypeOfUnitOrComponent" desc="To identify the type of unit/component of an object (e.g. lock, door, tyre)."/>
+  <composite_data_element id="C824" name="ComponentMaterial" desc="To identify the material of which a component is composed (e.g. steel, plastics)."/>
+  <composite_data_element id="C825" name="DamageSeverity" desc="To specify the severity of damage to an object."/>
+  <composite_data_element id="C826" name="Action" desc="To indicate an action which has been taken or is to be taken (e.g. in relation to a certain object)."/>
+  <composite_data_element id="C827" name="TypeOfMarking" desc="Specification of the type of marking that reflects the method that was used and the conventions adhered to for marking (e.g. of packages)."/>
+  <composite_data_element id="C829" name="Sub" desc="To provide an indication that a segment or segment group is used to contain sub-line or sub-line item information and to optionally enable the sub-line to be identified."/>
+  <composite_data_element id="C849" name="PartiesToInstruction" desc="Identify the sending and receiving parties of the instruction."/>
+  <composite_data_element id="C850" name="StatusOfInstruction" desc="Provides information regarding the status of an instruction."/>
+  <composite_data_element id="C878" name="ChargeOrAllowanceAccount" desc="Identification of the account for charge or allowance."/>
+  <composite_data_element id="C889" name="CharacteristicValue" desc="To provide the value of a characteristic."/>
+  <composite_data_element id="C901" name="ApplicationErrorDetail" desc="Code assigned by the recipient of a message to indicate a data validation error condition."/>
+  <composite_data_element id="C941" name="Relationship" desc="Identification and/or description of a relationship."/>
+  <composite_data_element id="C942" name="MembershipCategory" desc="Identification and/or description of a membership category for a member of a scheme or group."/>
+  <composite_data_element id="C944" name="MembershipStatus" desc="Code and/or description of membership status."/>
+  <composite_data_element id="C945" name="MembershipLevel" desc="Identification of a membership level."/>
+  <composite_data_element id="C948" name="EmploymentCategory" desc="Code and/or description of an employment category."/>
+  <composite_data_element id="C950" name="QualificationClassification" desc="Qualification classification description and/or code. This specifies the trade, skill, professional or similar qualification category."/>
+  <composite_data_element id="C951" name="Occupation" desc="Description of an occupation."/>
+  <composite_data_element id="C953" name="ContributionType" desc="Identification of the type of a contribution to a scheme or group."/>
+  <composite_data_element id="C955" name="AttributeType" desc="Identification of the type of attribute."/>
+  <composite_data_element id="C956" name="AttributeDetails" desc="Identification of the attribute related to an entity."/>
+  <composite_data_element id="C960" name="ReasonForChange" desc="Code and/or description of the reason for a change."/>
+</composite_data_elements>
